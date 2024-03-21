@@ -16,16 +16,15 @@
             font-family: 'Arial', sans-serif;
             background-color: #f8f9fa;
             color: #495057;
+            background-color: #c94646;
          
 
            
         }
 
         .navbar {
-            background-color: #343a40;
-            opacity: 0.7;
-            width: 70%;
-            margin: 0 auto; 
+            background-color: #030303;
+           
         }
 
         .navbar-brand,
@@ -34,22 +33,23 @@
         }
 
         .jumbotron {
-            opacity: 0.8;
-            
            
+           
+        
             text-align: center;
-            padding: 100px 0;
-            margin-bottom: 0;
-            color: #0a0a0a;
+            padding: 5rem 2rem; /* Adjust padding as needed */
+        background-color: #c94646; /* Change background color if desired */
+        min-height: 200px; /* Set minimum height */
+        margin-bottom: 0; /* Remove default bottom margin */
+            
+            color: #ffffff;
             
             
         
             
         }
 
-        .card {
-            margin: 20px 0;
-        }
+       
 
         .footer {
             background-color: #343a40;
@@ -80,51 +80,31 @@
             background-color: #212529;
         }
         
-         /*  .inline-images {
-            width: 30%;
-            display: inline-block;
-           
-            height: 200px; 
-            overflow: hidden; 
-            position: relative;
-        }*/
-
-       /* .inline-images img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; 
-            top: 0;
-            left: 0;
-        }*/
-        hr {
-            border: 1px solid rgb(2, 2, 2); /* Customize the border style as needed */
-            font-weight: bold;
-            
-        }
+        
         .black-and-white {
             filter: grayscale(200%) brightness(5);
         }
+        .image-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-container img {
+    width: calc(20% - 10px); /* 20% width for each image with a margin of 10px between them */
+    margin: 5px; /* Margin for each image */
+    max-width: 100%; /* Ensure images are responsive */
+}
+
         
-.inline-images {
-    
-    padding: 10px;
-}
+        
 
-.img-fluid {
-    max-width: 100%;
-    height: auto;
-}
-
-.text-container {
-    padding: 10px;
-}
     </style>
 </head>
 
 <body>
 
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="border-radius: 50px;">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" >
     
         <a href="#"><img src="https://static.vecteezy.com/system/resources/previews/013/366/660/original/birthday-cake-silhouette-for-icon-symbol-pictogram-apps-website-art-illustration-logo-or-graphic-design-element-format-png.png" alt="" style=" height: 60px; " ></a>
 
@@ -167,89 +147,40 @@
     <!-- Jumbotron -->
     
     <div class="jumbotron">
+        
         <h1 class="display-4">Welcome to         <img src="https://static.vecteezy.com/system/resources/previews/013/366/660/original/birthday-cake-silhouette-for-icon-symbol-pictogram-apps-website-art-illustration-logo-or-graphic-design-element-format-png.png" alt="" style=" height: 80px;" class="black-and-white">
             LayersOfJoy</h1>
         <p class="lead">Indulge in the sweet symphony of flavors, where every slice tells a story of pure delight. <br>Layers of Joy is your sanctuary for all things cake — a haven for baking enthusiasts, <br>dessert lovers, and anyone seeking a slice of happiness.</p>
     </div>
     
    
+<!--photos-->
+<div class="image-container">
+    <img src="https://i.pinimg.com/736x/b3/d8/ab/b3d8ab718537d9347e2af31019abc742.jpg" alt="Image 1">
+    <img src="https://i.pinimg.com/736x/55/3c/f2/553cf2cac28d1b92d67c8bf22caff1ab.jpg" alt="Image 2">
+    <img src="https://i.pinimg.com/736x/6a/1b/57/6a1b5775277fe098458f90e2ef218fcf.jpg" alt="Image 3">
+    <img src="https://i.pinimg.com/736x/48/2a/c0/482ac0b1a501e0dc4a161c0e73ceedda.jpg" alt="Image 4">
+    <img src="https://i.pinimg.com/736x/00/0e/11/000e11f3c1b1f64ddfff448223687e3f.jpg" alt="Image 5">
+</div>
+<div class="image-container">
+    <img src="https://i.pinimg.com/474x/a4/f1/37/a4f1378af839ad3b5fbc28232013de1b.jpg" alt="Image 1">
+    <img src="https://i.pinimg.com/736x/f1/30/15/f130154b7eefd80c17e6aa25f5ae9494.jpg" alt="Image 2">
+    <img src="https://i.pinimg.com/originals/f8/49/e2/f849e236c78c79a8ee15b523ff7a6ddb.jpg" alt="Image 3">
+    <img src="https://i.pinimg.com/736x/9c/46/cf/9c46cf586e256bd8377947860eb9ea6f.jpg" alt="Image 4">
+    <img src="https://i.pinimg.com/736x/12/41/4b/12414b8b8ac2e36ee64ded9d74ed1fdc.jpg" alt="Image 5">
+</div>
+<div class="image-container">
+    <img src="https://i.pinimg.com/474x/14/c2/44/14c2440cc79ccd79a6bd6a090c53fe9f.jpg" alt="Image 1">
+    <img src="https://i.pinimg.com/736x/07/81/08/0781083a9bac4844eb254713bf0b5900.jpg" alt="Image 2">
+    <img src="https://i.pinimg.com/736x/6a/1b/57/6a1b5775277fe098458f90e2ef218fcf.jpg" alt="Image 3">
+    <img src="https://i.pinimg.com/736x/71/f3/3c/71f33cc8652f7df5d22b3b0c364d2441.jpg" alt="Image 4">
+    <img src="https://i.pinimg.com/originals/16/9e/6a/169e6afcbe99341424fa8bafbeef3a80.jpg" alt="Image 5">
+</div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="inline-images">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcSjWn4uAJMaoOoW9LZCm6VwIoBOG_p8PdKSAb4vPnBG-BtT1IJtBGx8TDRw&s" class="img-fluid" alt="...">
-                    <div class="text-container">
-                        <p>This is the description text for image 1.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="inline-images">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7aEFgcGbVc4cOP2wDjgUi3fQ20REv5zAbMZbCL1sPebsykIqZF8qxBWdsXQ&s" class="img-fluid" alt="...">
-                    <div class="text-container">
-                        <p>This is the description text for image 2.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="inline-images">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjnhIK-5vBgzBcYLQp4unYBBRUgaiFlBNHmDkPZcZ-AylfmL_baF4Rxskkwg&s" class="img-fluid" alt="...">
-                    <div class="text-container">
-                        <p>This is the description text for image 3.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="inline-images">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUG9YPVvXVMkCvN6HX_fjZMrlV7LHNXUPamqekAxOcDdJd02zD1nGTLPVt3g&s" class="img-fluid" alt="...">
-                    <div class="text-container">
-                        <p>This is the description text for image 4.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-3">
-                <div class="inline-images">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcSjWn4uAJMaoOoW9LZCm6VwIoBOG_p8PdKSAb4vPnBG-BtT1IJtBGx8TDRw&s" class="img-fluid" alt="...">
-                    <div class="text-container">
-                        <p>This is the description text for image 1.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="inline-images">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7aEFgcGbVc4cOP2wDjgUi3fQ20REv5zAbMZbCL1sPebsykIqZF8qxBWdsXQ&s" class="img-fluid" alt="...">
-                    <div class="text-container">
-                        <p>This is the description text for image 2.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="inline-images">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjnhIK-5vBgzBcYLQp4unYBBRUgaiFlBNHmDkPZcZ-AylfmL_baF4Rxskkwg&s" class="img-fluid" alt="...">
-                    <div class="text-container">
-                        <p>This is the description text for image 3.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="inline-images">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUG9YPVvXVMkCvN6HX_fjZMrlV7LHNXUPamqekAxOcDdJd02zD1nGTLPVt3g&s" class="img-fluid" alt="...">
-                    <div class="text-container">
-                        <p>This is the description text for image 4.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    
-       
+
+
 
     
-
     
 
         
