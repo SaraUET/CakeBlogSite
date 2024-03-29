@@ -157,7 +157,7 @@
                             <a class="dropdown-item" href="">Carrot Cake Recipes</a>
                             <a class="dropdown-item" href="marblecakerecipe.html">Marble Cake Recipes</a>
                             <a class="dropdown-item" href="redvelvetcakerecipe.html">Red Velvet Cake Recipes</a>
-                        <a class="dropdown-item" href="blackforestcakerecipe.txt">Black Forest Cake Recipes</a>
+                        <a class="dropdown-item" href="">Black Forest Cake Recipes</a>
                         <a class="dropdown-item" href="orangecakerecipe.html">Orange Cake Recipes</a>
                            
                             <!-- Add more items as needed -->
@@ -182,14 +182,14 @@
 <!-- Jumbotron -->
     
 <div class="jumbotron">
-    <h1> Carrot Cake</h1>
+    <h1> Black Forest Cake</h1>
 </div>
 <!--Recipie-->
     <section>
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <img src="https://butternutbakeryblog.com/wp-content/uploads/2019/04/carrot-cake-layers.jpg" alt="Carrot Cake" class="recipe-img">
+                    <img src="https://i.pinimg.com/originals/74/4a/8e/744a8e149d0869a52a2b49b14b46928a.jpg" alt="Black Forest Cake" class="recipe-img">
                 </div>
                 <div class="col-lg-6">
                     <div class="recipe-card">
