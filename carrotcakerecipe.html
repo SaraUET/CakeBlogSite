@@ -117,7 +117,7 @@
         }
         .video-container {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-bottom: 56.25%; 
     overflow: hidden;
     
 }
@@ -160,7 +160,7 @@
                         <a class="dropdown-item" href="blackforestcakerecipe.html">Black Forest Cake Recipes</a>
                         <a class="dropdown-item" href="orangecakerecipe.html">Orange Cake Recipes</a>
                            
-                            <!-- Add more items as needed -->
+                            
                         </div>
                     </li>
                     <li class="nav-item">
@@ -176,15 +176,13 @@
             </div>
         </nav>
 <br><br><br>
-  <!--  &nbsp;<header>
-        <h1>Delicious Carrot Cake</h1>
-    </header>-->
+  
 <!-- Jumbotron -->
     
 <div class="jumbotron">
     <h1> Carrot Cake</h1>
 </div>
-<!--Recipie-->
+<!--Recipe-->
     <section>
         <div class="container">
             <div class="row">
@@ -230,7 +228,7 @@
             </div>
         </div>
     </section>
-    <!-- Add the YouTube video here -->
+    <!--  video -->
 <div class="row"><div class="col-lg">
 <div class="video-container">
     <iframe  src="https://www.youtube.com/embed/bstOsDXrRUs" frameborder="0" allowfullscreen></iframe>
@@ -244,7 +242,7 @@
 <button class="btn btn-primary mt-2" onclick="postComment()" style="background-color: #e44d26;">Post Comment</button>
 </div>
 <ul class="comment-list" id="commentList">
-<!-- Comments will be dynamically added here -->
+<!-- Comment box -->
 </ul>
 </div>
 </section>
@@ -256,7 +254,7 @@
         function postComment() {
             var comment = document.getElementById("commentInput").value.trim();
             
-            // Check if the comment is not empty and is less than or equal to 100 words
+            
             if (comment !== "" && countWords(comment) <= 100) {
                 var commentList = document.getElementById("commentList");
                 var listItem = document.createElement("li");
@@ -270,7 +268,7 @@
         }
     
         function countWords(text) {
-            // Count the number of words in the text
+            
             var words = text.split(/\s+/);
             return words.length;
         }

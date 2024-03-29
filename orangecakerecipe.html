@@ -40,8 +40,8 @@
             text-align: center;
         }
         .jumbotron {
-          background-image: url('https://i.pinimg.com/736x/0a/a2/2d/0aa22d4b4b976551e1c5906499d085b0.jpg');
-        
+          background-image: url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsb2ZmaWNlNV9pbGx1c3RyYXRpb25fb2Zfb3JhbmdlX3NreV9fbWluaW1hbF93YXhfY3JheW9uX185OTgyN2Y5Yy02NzhhLTQ3NDYtOWE1Ni02YzkxOWNmZGVmMGRfMS5qcGc.jpg');
+        background-size: cover;
             text-align: center;
             padding: 100px 0;
             margin-bottom: 0;
@@ -117,7 +117,7 @@
         }
         .video-container {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-bottom: 56.25%; 
     overflow: hidden;
     
 }
@@ -160,7 +160,7 @@
                         <a class="dropdown-item" href="blackforestcakerecipe.html">Black Forest Cake Recipes</a>
                         <a class="dropdown-item" href="">Orange Cake Recipes</a>
                            
-                            <!-- Add more items as needed -->
+                            
                         </div>
                     </li>
                     <li class="nav-item">
@@ -176,15 +176,12 @@
             </div>
         </nav>
 <br><br><br>
-  <!--  &nbsp;<header>
-        <h1>Delicious Carrot Cake</h1>
-    </header>-->
-<!-- Jumbotron -->
-    
+ 
+  <!-- Jumbotron -->  
 <div class="jumbotron">
     <h1> Orange Cake</h1>
 </div>
-<!--Recipie-->
+<!--Recipe-->
     <section>
         <div class="container">
             <div class="row">
@@ -231,12 +228,13 @@
             </div>
         </div>
     </section>
-    <!-- Add the YouTube video here -->
+    <!-- Video -->
 <div class="row"><div class="col-lg">
 <div class="video-container">
     <iframe  src="https://www.youtube.com/embed/gBD_U5oYToM" frameborder="0" allowfullscreen></iframe>
 </div>
 </div></div> 
+<!--Comment box-->
 <section class="comment-section">
 <div class="container">
 <h2>Comments</h2>
@@ -245,7 +243,7 @@
 <button class="btn btn-primary mt-2" onclick="postComment()" style="background-color: #e44d26;">Post Comment</button>
 </div>
 <ul class="comment-list" id="commentList">
-<!-- Comments will be dynamically added here -->
+
 </ul>
 </div>
 </section>
@@ -257,7 +255,7 @@
         function postComment() {
             var comment = document.getElementById("commentInput").value.trim();
             
-            // Check if the comment is not empty and is less than or equal to 100 words
+          
             if (comment !== "" && countWords(comment) <= 100) {
                 var commentList = document.getElementById("commentList");
                 var listItem = document.createElement("li");
@@ -271,7 +269,7 @@
         }
     
         function countWords(text) {
-            // Count the number of words in the text
+            
             var words = text.split(/\s+/);
             return words.length;
         }
