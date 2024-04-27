@@ -122,18 +122,15 @@
 <body>
     <script>
         window.onload = function() {
-            // Check if the referrer exists
-            var referrer = document.referrer;
+            // Get the URL parameters
+            var queryString = window.location.search;
+            var urlParams = new URLSearchParams(queryString);
     
-            // Check if the referrer is the index page
-            var fromIndexPage = referrer.includes("index.html");
+            // Check if the URL contains a specific parameter indicating the source
+            var source = urlParams.get('source');
     
-            // Check if the user is accessing the home page directly
-            var directAccess = !referrer || referrer === window.location.href;
-    
-            // If the user is accessing the home page directly or from a search result,
-            // redirect to the login page
-            if (directAccess || !fromIndexPage) {
+            // If the source parameter is not from the index page, redirect to the login page
+            if (source !== 'index') {
                 window.location.href = "login.html"; 
             }
         };
