@@ -120,6 +120,24 @@
 </head>
 
 <body>
+    <script>
+        window.onload = function() {
+            // Check if the referrer exists
+            var referrer = document.referrer;
+    
+            // Check if the referrer is the index page
+            var fromIndexPage = referrer.includes("index.html");
+    
+            // Check if the user is accessing the home page directly
+            var directAccess = !referrer || referrer === window.location.href;
+    
+            // If the user is accessing the home page directly or from a search result,
+            // redirect to the login page
+            if (directAccess || !fromIndexPage) {
+                window.location.href = "login.html"; 
+            }
+        };
+    </script>
     
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
