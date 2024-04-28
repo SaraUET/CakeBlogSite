@@ -135,28 +135,26 @@
 </head>
 <body>
     <html lang="en">
-<head>
-    <!-- Add your head content here -->
-</head>
+
 <body>
     <script>
-        // Function to check if the user is logged in
+     
         function checkLogin() {
-            // Check if the user is logged in (you can use your own logic here)
-            var isLoggedIn = false; // Change this to your actual check
+          
+            var isLoggedIn = false; 
 
-            // Check if the user accessed the page from the home page or the navigation bar
+           
             var referrer = document.referrer;
             var isFromHomePage = referrer.endsWith("home.html");
             var isFromNavBar = referrer.endsWith("navbar.html");
 
-            // If the user is not logged in and didn't access from the home page or the navigation bar, redirect to login
+           
             if (!isLoggedIn && !isFromHomePage && !isFromNavBar) {
-                window.location.href = "login.html"; // Redirect to the login page
+                window.location.href = "login.html"; 
             }
         }
 
-        // Call the checkLogin function when the page loads
+        
         window.onload = checkLogin;
     </script>
 

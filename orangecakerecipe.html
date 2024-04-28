@@ -134,7 +134,26 @@
     <title>Orange Cake Recipe</title>
 </head>
 <body>
-    
+    <script>
+     
+        function checkLogin() {
+          
+            var isLoggedIn = false; 
+
+           
+            var referrer = document.referrer;
+            var isFromHomePage = referrer.endsWith("home.html");
+            var isFromNavBar = referrer.endsWith("navbar.html");
+
+           
+            if (!isLoggedIn && !isFromHomePage && !isFromNavBar) {
+                window.location.href = "login.html"; 
+            }
+        }
+
+        
+        window.onload = checkLogin;
+    </script>
         <!-- Navigation Bar -->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <a href="#"><img src="https://static.vecteezy.com/system/resources/previews/013/366/660/original/birthday-cake-silhouette-for-icon-symbol-pictogram-apps-website-art-illustration-logo-or-graphic-design-element-format-png.png" alt="" style=" height: 60px; " ></a>
