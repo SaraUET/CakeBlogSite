@@ -13,18 +13,12 @@
 <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <style>
-        
-        
 
-        .navbar {
-    background-color: #030303;
-    opacity: 0.8;
-}
 
-        .navbar-brand,
-        .navbar-nav .nav-link {
-            color: #ffffff;
-        }
+
+
+
+
 
 
         body {
@@ -33,7 +27,7 @@
             color: #333;
             background-image: url('https://t4.ftcdn.net/jpg/02/99/93/79/360_F_299937957_h1To27M5XqZTUvi6CpuBpFfcqWzfVnt3.jpg');
             background-position: center;
-           
+
         }
         header {
             background-color: #e44d26;
@@ -42,17 +36,17 @@
         }
         .jumbotron {
         opacity: 0.9;
-          
+
     background-color: #856e5d8f;
             text-align: center;
             padding: 100px 0;
             margin-bottom: 0;
-       
+
             font-family: cursive;
             color: #0e0c0c;
         }
 
-       
+
         section {
             padding: 40px 0;
         }
@@ -119,15 +113,197 @@
         }
 </style>
     <title>Chocolate Lava Cake Recipe</title>
+    <style>
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.7;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            font-weight: 750;
+            line-height: 1.2;
+            letter-spacing: -0.025em;
+        }
+
+        p,
+        li,
+        label {
+            line-height: 1.7;
+        }
+    </style>
+    <style id="site-navbar-theme">
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top {
+            top: 12px;
+            left: 50%;
+            width: min(1240px, calc(100% - 32px));
+            margin: 0;
+            padding: 0.45rem 0.65rem 0.45rem 1rem;
+            transform: translateX(-50%);
+            border: 1px solid rgba(94, 54, 36, 0.13);
+            border-radius: 999px;
+            background: rgba(255, 250, 246, 0.94) !important;
+            box-shadow: 0 14px 38px rgba(48, 28, 18, 0.16);
+            -webkit-backdrop-filter: blur(16px);
+            backdrop-filter: blur(16px);
+            z-index: 1030;
+        }
+
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top > a:first-child img {
+            width: 44px;
+            height: 44px !important;
+            object-fit: contain;
+            filter: brightness(0) saturate(100%) invert(25%) sepia(20%) saturate(1500%) hue-rotate(337deg) brightness(88%) contrast(92%);
+        }
+
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .navbar-brand {
+            margin: 0 1.4rem 0 0.35rem;
+            color: #3b2117 !important;
+            font-family: 'Segoe UI', Arial, sans-serif !important;
+            font-size: 1.15rem;
+            font-weight: 800;
+            letter-spacing: -0.04em;
+        }
+
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .navbar-nav {
+            align-items: center;
+            gap: 0.15rem;
+        }
+
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .navbar-nav > .nav-item { margin-bottom: 0; }
+
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .navbar-nav .nav-link {
+            border-radius: 999px;
+            padding: 0.62rem 0.88rem !important;
+            color: #543b30 !important;
+            font-family: 'Segoe UI', Arial, sans-serif !important;
+            font-size: 0.92rem;
+            font-weight: 650;
+            letter-spacing: 0.005em;
+            transition: color 0.18s ease, background-color 0.18s ease, transform 0.18s ease;
+        }
+
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .navbar-nav .nav-link:hover,
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .navbar-nav .nav-link:focus-visible {
+            background: rgba(198, 107, 69, 0.12);
+            color: #843f27 !important;
+            transform: translateY(-1px);
+        }
+
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .navbar-nav .nav-item:last-child > .nav-link {
+            margin-left: 0.35rem;
+            padding-right: 1.2rem !important;
+            padding-left: 1.2rem !important;
+            background: linear-gradient(135deg, #c66b45, #843f27);
+            color: #fff !important;
+            box-shadow: 0 7px 16px rgba(132, 63, 39, 0.2);
+        }
+
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .navbar-nav .nav-item:last-child > .nav-link:hover,
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .navbar-nav .nav-item:last-child > .nav-link:focus-visible {
+            background: linear-gradient(135deg, #b65b37, #71341f);
+            color: #fff !important;
+        }
+
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-menu {
+            max-height: min(70vh, 420px);
+            overflow-y: auto;
+            border: 1px solid rgba(94, 54, 36, 0.12);
+            border-radius: 18px;
+            background: #fffaf6;
+            box-shadow: 0 12px 28px rgba(48, 28, 18, 0.14);
+            padding: 0.45rem;
+        }
+
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-item {
+            border-radius: 10px;
+            padding: 0.62rem 0.85rem;
+            color: #543b30;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            font-size: 0.9rem;
+            transition: background-color 0.18s ease, color 0.18s ease;
+        }
+
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-item:hover,
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-item:focus {
+            background: #f8e9df;
+            color: #843f27;
+        }
+
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .navbar-toggler {
+            border: 1px solid rgba(84, 59, 48, 0.2);
+            border-radius: 13px;
+            padding: 0.42rem 0.62rem;
+        }
+
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .navbar-toggler:focus {
+            box-shadow: 0 0 0 3px rgba(198, 107, 69, 0.18);
+        }
+
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .navbar-toggler-icon {
+            filter: brightness(0) saturate(100%) invert(25%) sepia(20%) saturate(1500%) hue-rotate(337deg) brightness(88%) contrast(92%);
+        }
+
+        @media (max-width: 991.98px) {
+            nav.navbar.navbar-expand-lg.navbar-dark.fixed-top {
+                align-items: center;
+                border-radius: 24px;
+                padding: 0.5rem 0.75rem;
+            }
+
+            nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .navbar-collapse {
+                flex-basis: 100%;
+                padding: 0.65rem 0.2rem 0.2rem;
+            }
+
+            nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .navbar-nav {
+                align-items: stretch;
+                gap: 0.12rem;
+            }
+
+            nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .navbar-nav > .nav-item { margin-bottom: 0; }
+
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .navbar-nav .nav-link {
+                padding: 0.7rem 0.9rem !important;
+            }
+
+            nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .navbar-nav .nav-item:last-child > .nav-link {
+                margin: 0.4rem 0 0;
+                text-align: center;
+            }
+
+nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-menu { max-height: min(60vh, 420px); overflow-y: auto; }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .navbar-nav > .nav-item { margin-bottom: 0; }
+
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .navbar-nav .nav-link {
+                transition: none;
+            }
+        }
+    </style>
 </head>
 <body>
-    
-        
+
+
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <a href="home.html"><img src="https://static.vecteezy.com/system/resources/previews/013/366/660/original/birthday-cake-silhouette-for-icon-symbol-pictogram-apps-website-art-illustration-logo-or-graphic-design-element-format-png.png" alt="" style="height: 60px;" ></a>
-        <a class="navbar-brand" href="home.html" style="font-family: Times New Roman;">LayersOfJoy</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <a href="home.html"><img src="https://static.vecteezy.com/system/resources/previews/013/366/660/original/birthday-cake-silhouette-for-icon-symbol-pictogram-apps-website-art-illustration-logo-or-graphic-design-element-format-png.png" alt="" style="height: 44px;" ></a>
+        <a class="navbar-brand" href="home.html" >LayersOfJoy</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarNav" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -136,7 +312,7 @@
                     <a class="nav-link" href="home.html">Home</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="recipesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="recipesDropdown" role="button" data-toggle="dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Recipes
                     </a>
                     <div class="dropdown-menu" aria-labelledby="recipesDropdown" style="max-height: 70vh; overflow-y: auto; overscroll-behavior: contain;">
@@ -169,15 +345,15 @@
                     <a class="nav-link" href="contactme.html">Contact Me</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="logout.html">Logout</a>
+                    <a class="nav-link" href="login.html">Sign in</a>
                 </li>
             </ul>
         </div>
     </nav>
 
 <br><br><br>
- 
-  <!-- Jumbotron -->  
+
+  <!-- Jumbotron -->
 <div class="jumbotron">
     <h1> Chocolate Lava Cake</h1>
 </div>
@@ -202,7 +378,7 @@
                             <li>6 tablespoons all-purpose flour</li>
                             <li>Vanilla ice cream (for serving, if desired)</li>
                         </ul>
-                        
+
                         <!-- Instructions -->
                         <h2>Instructions:</h2>
                         <ol>
@@ -221,13 +397,13 @@
                         <button class="btn-print" onclick="window.print()">Print Recipe</button>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </section>
     <!-- Video -->
 <div class="row"><div class="col-lg">
-</div></div> 
+</div></div>
 <!--Comment box-->
 <section class="comment-section">
 <div class="container">
@@ -248,8 +424,8 @@
     <script>
         function postComment() {
             var comment = document.getElementById("commentInput").value.trim();
-            
-          
+
+
             if (comment !== "" && countWords(comment) <= 100) {
                 var commentList = document.getElementById("commentList");
                 var listItem = document.createElement("li");
@@ -261,9 +437,9 @@
                 alert("Please enter a valid comment within 100 words.");
             }
         }
-    
+
         function countWords(text) {
-            
+
             var words = text.split(/\s+/);
             return words.length;
         }
@@ -273,6 +449,6 @@
     <p>&copy; 2024 Cake Blog</p>
 </div>
 
-    
+
 </body>
 </html>

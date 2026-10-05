@@ -16,7 +16,7 @@
 
     <title>Home</title>
 
-   
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
@@ -46,41 +46,17 @@
             line-height: 1.7;
         }
 
-        .navbar {
-            background: rgba(13, 10, 10, 0.8);
-            backdrop-filter: blur(12px);
-            border-bottom: 1px solid rgba(255,255,255,0.08);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-        }
 
-        .navbar-brand,
-        .navbar-nav .nav-link {
-            color: #ffffff !important;
-            font-weight: 600;
-        }
 
-        .navbar-nav .nav-link:hover,
-        .navbar-brand:hover {
-            color: #f7d5b8 !important;
-        }
 
-        .dropdown-menu {
-            border-radius: 14px;
-            border: none;
-            box-shadow: var(--shadow);
-            padding: 0.8rem 0;
-        }
 
-        .dropdown-item {
-            padding: 0.7rem 1rem;
-            color: var(--ink);
-            font-weight: 500;
-        }
 
-        .dropdown-item:hover {
-            background: #fff3ea;
-            color: var(--accent-dark);
-        }
+
+
+
+
+
+
 
         .jumbotron {
             position: relative;
@@ -393,18 +369,169 @@
             }
         }
     </style>
+    <style id="site-navbar-theme">
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top {
+            top: 12px;
+            left: 50%;
+            width: min(1240px, calc(100% - 32px));
+            margin: 0;
+            padding: 0.45rem 0.65rem 0.45rem 1rem;
+            transform: translateX(-50%);
+            border: 1px solid rgba(94, 54, 36, 0.13);
+            border-radius: 999px;
+            background: rgba(255, 250, 246, 0.94) !important;
+            box-shadow: 0 14px 38px rgba(48, 28, 18, 0.16);
+            -webkit-backdrop-filter: blur(16px);
+            backdrop-filter: blur(16px);
+            z-index: 1030;
+        }
+
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top > a:first-child img {
+            width: 44px;
+            height: 44px !important;
+            object-fit: contain;
+            filter: brightness(0) saturate(100%) invert(25%) sepia(20%) saturate(1500%) hue-rotate(337deg) brightness(88%) contrast(92%);
+        }
+
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .navbar-brand {
+            margin: 0 1.4rem 0 0.35rem;
+            color: #3b2117 !important;
+            font-family: 'Segoe UI', Arial, sans-serif !important;
+            font-size: 1.15rem;
+            font-weight: 800;
+            letter-spacing: -0.04em;
+        }
+
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .navbar-nav {
+            align-items: center;
+            gap: 0.15rem;
+        }
+
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .navbar-nav > .nav-item { margin-bottom: 0; }
+
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .navbar-nav .nav-link {
+            border-radius: 999px;
+            padding: 0.62rem 0.88rem !important;
+            color: #543b30 !important;
+            font-family: 'Segoe UI', Arial, sans-serif !important;
+            font-size: 0.92rem;
+            font-weight: 650;
+            letter-spacing: 0.005em;
+            transition: color 0.18s ease, background-color 0.18s ease, transform 0.18s ease;
+        }
+
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .navbar-nav .nav-link:hover,
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .navbar-nav .nav-link:focus-visible {
+            background: rgba(198, 107, 69, 0.12);
+            color: #843f27 !important;
+            transform: translateY(-1px);
+        }
+
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .navbar-nav .nav-item:last-child > .nav-link {
+            margin-left: 0.35rem;
+            padding-right: 1.2rem !important;
+            padding-left: 1.2rem !important;
+            background: linear-gradient(135deg, #c66b45, #843f27);
+            color: #fff !important;
+            box-shadow: 0 7px 16px rgba(132, 63, 39, 0.2);
+        }
+
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .navbar-nav .nav-item:last-child > .nav-link:hover,
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .navbar-nav .nav-item:last-child > .nav-link:focus-visible {
+            background: linear-gradient(135deg, #b65b37, #71341f);
+            color: #fff !important;
+        }
+
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-menu {
+            max-height: min(70vh, 420px);
+            overflow-y: auto;
+            border: 1px solid rgba(94, 54, 36, 0.12);
+            border-radius: 18px;
+            background: #fffaf6;
+            box-shadow: 0 12px 28px rgba(48, 28, 18, 0.14);
+            padding: 0.45rem;
+        }
+
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-item {
+            border-radius: 10px;
+            padding: 0.62rem 0.85rem;
+            color: #543b30;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            font-size: 0.9rem;
+            transition: background-color 0.18s ease, color 0.18s ease;
+        }
+
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-item:hover,
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-item:focus {
+            background: #f8e9df;
+            color: #843f27;
+        }
+
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .navbar-toggler {
+            border: 1px solid rgba(84, 59, 48, 0.2);
+            border-radius: 13px;
+            padding: 0.42rem 0.62rem;
+        }
+
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .navbar-toggler:focus {
+            box-shadow: 0 0 0 3px rgba(198, 107, 69, 0.18);
+        }
+
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .navbar-toggler-icon {
+            filter: brightness(0) saturate(100%) invert(25%) sepia(20%) saturate(1500%) hue-rotate(337deg) brightness(88%) contrast(92%);
+        }
+
+        @media (max-width: 991.98px) {
+            nav.navbar.navbar-expand-lg.navbar-dark.fixed-top {
+                align-items: center;
+                border-radius: 24px;
+                padding: 0.5rem 0.75rem;
+            }
+
+            nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .navbar-collapse {
+                flex-basis: 100%;
+                padding: 0.65rem 0.2rem 0.2rem;
+            }
+
+            nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .navbar-nav {
+                align-items: stretch;
+                gap: 0.12rem;
+            }
+
+            nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .navbar-nav > .nav-item { margin-bottom: 0; }
+
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .navbar-nav .nav-link {
+                padding: 0.7rem 0.9rem !important;
+            }
+
+            nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .navbar-nav .nav-item:last-child > .nav-link {
+                margin: 0.4rem 0 0;
+                text-align: center;
+            }
+
+nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-menu { max-height: min(60vh, 420px); overflow-y: auto; }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .navbar-nav > .nav-item { margin-bottom: 0; }
+
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .navbar-nav .nav-link {
+                transition: none;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    
 
-    
-    
+
+
+
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <a href="home.html"><img src="https://static.vecteezy.com/system/resources/previews/013/366/660/original/birthday-cake-silhouette-for-icon-symbol-pictogram-apps-website-art-illustration-logo-or-graphic-design-element-format-png.png" alt="" style="height: 60px;" ></a>
-        <a class="navbar-brand" href="home.html" style="font-family: Times New Roman;">LayersOfJoy</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <a href="home.html"><img src="https://static.vecteezy.com/system/resources/previews/013/366/660/original/birthday-cake-silhouette-for-icon-symbol-pictogram-apps-website-art-illustration-logo-or-graphic-design-element-format-png.png" alt="" style="height: 44px;" ></a>
+        <a class="navbar-brand" href="home.html" >LayersOfJoy</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarNav" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -413,7 +540,7 @@
                     <a class="nav-link" href="home.html">Home</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="recipesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="recipesDropdown" role="button" data-toggle="dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Recipes
                     </a>
                     <div class="dropdown-menu" aria-labelledby="recipesDropdown" style="max-height: 70vh; overflow-y: auto; overscroll-behavior: contain;">
@@ -446,7 +573,7 @@
                     <a class="nav-link" href="contactme.html">Contact Me</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="logout.html">Logout</a>
+                    <a class="nav-link" href="login.html">Sign in</a>
                 </li>
             </ul>
         </div>
@@ -454,14 +581,14 @@
 
 
     <!-- Jumbotron -->
-    
+
     <div class="jumbotron" >
-        <h1 class="display-4" style="font-size: 50px;">Welcome to        
+        <h1 class="display-4" style="font-size: 50px;">Welcome to
             LayersOfJoy</h1>
         <p class="lead">Indulge in the sweet symphony of flavors, where every slice tells a story of pure delight. <br>Layers of Joy is your sanctuary for all things cake — a haven for baking enthusiasts, <br>dessert lovers, and anyone seeking a slice of happiness.</p>
     </div>
-    
-       
+
+
     <div class="content-shell">
         <div class="feature-panel">
             <h2>Freshly baked inspiration</h2>
@@ -609,28 +736,28 @@
             <a href="#featured-recipes" class="btn-custom">Browse recipes</a>
         </div>
     </div>
-    
-       
 
-    
 
-    
 
-        
-   
-   
+
+
+
+
+
+
+
     <!-- Footer -->
     <div class="footer text-center">
         <p>&copy; 2024 Cake Blog</p>
-        
+
     </div>
 
-    
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-   
+
 </body>
 
 </html>
