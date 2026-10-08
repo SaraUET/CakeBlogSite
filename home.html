@@ -166,9 +166,12 @@
             box-shadow: var(--shadow);
         }
 
-        .recipe-card:hover .recipe-card-inner,
         .recipe-card-toggle:checked + .recipe-card-inner {
             transform: rotateY(180deg);
+        }
+
+        .recipe-card > .recipe-card-toggle:checked + .recipe-card-inner {
+            transform: rotateY(180deg) !important;
         }
 
         .recipe-card-toggle:focus-visible + .recipe-card-inner {
@@ -381,11 +384,35 @@
                 radial-gradient(ellipse at 84% 12%, rgba(225, 180, 103, 0.3), transparent 29rem),
                 linear-gradient(135deg, #f4ded0, #fff6e9 58%, #f4e4d7);
             color: var(--ink);
+            text-align: left;
+        }
+
+        .hero-layout {
+            display: grid;
+            width: min(1120px, 100%);
+            grid-template-columns: 1fr 0.78fr;
+            gap: clamp(32px, 6vw, 82px);
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        .hero-copy {
+            max-width: 630px;
+        }
+
+        .hero-kicker {
+            margin: 0 0 16px;
+            color: #a8563f;
+            font-family: 'Segoe Print', 'Bradley Hand', cursive;
+            font-size: 1rem;
+            font-weight: 700;
+            transform: rotate(-2deg);
+            transform-origin: left center;
         }
 
         .jumbotron h1 {
-            max-width: 850px;
-            margin: 0 auto 1rem;
+            max-width: 680px;
+            margin: 0 0 1rem;
             color: #512f20;
             font-family: Georgia, 'Times New Roman', serif;
             font-size: clamp(2.8rem, 6vw, 5rem);
@@ -397,8 +424,74 @@
 
         .jumbotron .lead {
             max-width: 620px;
+            margin: 0;
             color: #705849;
             font-size: 1.08rem;
+        }
+
+        .hero-photo {
+            position: relative;
+            width: min(100%, 390px);
+            margin: 12px auto 0;
+            padding: 12px 12px 47px;
+            border: 1px solid rgba(119, 78, 54, 0.16);
+            border-radius: 4px 9px 5px 8px;
+            background: #fffdf8;
+            box-shadow: 0 20px 42px rgba(86, 54, 35, 0.22);
+            transform: rotate(3deg);
+        }
+
+        .hero-photo::before {
+            position: absolute;
+            z-index: 1;
+            top: -15px;
+            left: 37%;
+            width: 92px;
+            height: 30px;
+            border: 1px solid rgba(176, 113, 79, 0.24);
+            background: rgba(225, 185, 145, 0.78);
+            content: "";
+            transform: rotate(-7deg);
+        }
+
+        .hero-photo img {
+            display: block;
+            width: 100%;
+            height: clamp(240px, 28vw, 340px);
+            object-fit: cover;
+            filter: saturate(0.94) sepia(0.08);
+        }
+
+        .hero-photo figcaption {
+            position: absolute;
+            right: 14px;
+            bottom: 9px;
+            left: 14px;
+            color: #795943;
+            font-family: 'Segoe Print', 'Bradley Hand', cursive;
+            font-size: 0.88rem;
+            text-align: center;
+        }
+
+        .hero-link {
+            display: inline-flex;
+            gap: 10px;
+            align-items: center;
+            margin-top: 25px;
+            padding: 11px 19px;
+            border: 1px solid rgba(117, 69, 46, 0.22);
+            border-radius: 999px;
+            background: #fffaf2;
+            color: #75452e;
+            font-weight: 700;
+            text-decoration: none;
+            box-shadow: 0 7px 18px rgba(82, 49, 32, 0.1);
+        }
+
+        .hero-link:hover {
+            background: #75452e;
+            color: #fffaf2;
+            text-decoration: none;
         }
 
         .content-shell {
@@ -631,7 +724,11 @@
         }
 
         .feature-panel.kitchen-note {
+            display: grid;
             width: min(920px, 96%);
+            grid-template-columns: minmax(150px, 0.6fr) minmax(0, 1.4fr);
+            gap: clamp(18px, 4vw, 40px);
+            align-items: center;
             margin: 2px auto 58px;
             padding: 32px clamp(22px, 5vw, 54px) 35px clamp(42px, 7vw, 76px);
             border: 1px solid rgba(117, 69, 46, 0.2);
@@ -673,6 +770,46 @@
         .feature-panel.kitchen-note p {
             margin: 0 0 16px;
             text-align: left;
+        }
+
+        .kitchen-note-photo {
+            position: relative;
+            margin: 8px 0;
+            padding: 9px 9px 35px;
+            border: 1px solid rgba(117, 69, 46, 0.15);
+            background: #fffdf8;
+            box-shadow: 0 10px 18px rgba(75, 45, 28, 0.14);
+            transform: rotate(-3deg);
+        }
+
+        .kitchen-note-photo::after {
+            position: absolute;
+            top: -12px;
+            right: 22%;
+            width: 66px;
+            height: 23px;
+            border: 1px solid rgba(176, 113, 79, 0.2);
+            background: rgba(225, 185, 145, 0.68);
+            content: "";
+            transform: rotate(5deg);
+        }
+
+        .kitchen-note-photo img {
+            display: block;
+            width: 100%;
+            height: 166px;
+            object-fit: cover;
+        }
+
+        .kitchen-note-photo figcaption {
+            position: absolute;
+            right: 7px;
+            bottom: 5px;
+            left: 7px;
+            color: #795943;
+            font-family: 'Segoe Print', 'Bradley Hand', cursive;
+            font-size: 0.75rem;
+            text-align: center;
         }
 
         .kitchen-note-table {
@@ -766,6 +903,30 @@
         }
 
         @media (max-width: 768px) {
+            .jumbotron {
+                padding: 140px 20px 70px;
+            }
+
+            .hero-layout {
+                grid-template-columns: 1fr;
+                gap: 25px;
+                text-align: center;
+            }
+
+            .hero-kicker {
+                transform-origin: center;
+            }
+
+            .jumbotron h1,
+            .jumbotron .lead {
+                margin-right: auto;
+                margin-left: auto;
+            }
+
+            .hero-photo {
+                width: min(76%, 320px);
+            }
+
             #featured-recipes {
                 margin-right: -8px;
                 margin-left: -8px;
@@ -778,9 +939,16 @@
 
             .feature-panel.kitchen-note {
                 width: 100%;
+                grid-template-columns: 1fr;
+                gap: 10px;
                 padding: 31px 16px 25px 38px;
                 text-align: center;
                 transform: rotate(-0.3deg);
+            }
+
+            .kitchen-note-photo {
+                width: min(72%, 245px);
+                margin: 8px auto 13px;
             }
 
             .feature-panel.kitchen-note p {
@@ -825,7 +993,6 @@
             border: 0;
         }
 
-        .recipe-card:hover .recipe-card-inner,
         .recipe-card-toggle:checked + .recipe-card-inner {
             transform: rotateY(180deg);
         }
@@ -865,11 +1032,13 @@
 
         .recipe-card-back {
             justify-content: center;
+            z-index: 2;
             padding: 30px;
+            pointer-events: none;
             background:
                 radial-gradient(ellipse at 100% 0%, rgba(230, 174, 111, 0.34), transparent 55%),
                 linear-gradient(145deg, #fff8ed, #f2dfd0);
-            transform: rotateY(180deg);
+            transform: rotateY(180deg) translateZ(1px);
         }
 
         .recipe-card-back::before {
@@ -933,6 +1102,21 @@
         .recipe-card-link:hover,
         .btn-custom:hover {
             background: linear-gradient(135deg, #a8563f, #59341f);
+        }
+
+        .recipe-card-back .recipe-card-link {
+            position: relative;
+            z-index: 3;
+            display: inline-block;
+            flex: 0 0 auto;
+            pointer-events: auto;
+            cursor: pointer;
+            transform: translateZ(2px);
+        }
+
+        .recipe-card:hover .recipe-card-back,
+        .recipe-card-toggle:checked + .recipe-card-inner .recipe-card-back {
+            pointer-events: auto;
         }
 
         .cta-box {
@@ -1236,37 +1420,53 @@ nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-menu { max-height: m
     <!-- Jumbotron -->
 
     <div class="jumbotron">
-        <h1 class="display-4">A little more joy in every slice.</h1>
-        <p class="lead">Welcome to LayersOfJoy — thoughtful, approachable cake recipes for celebrations, slow weekends, and every sweet moment in between.</p>
+        <div class="hero-layout">
+            <div class="hero-copy">
+                <p class="hero-kicker">A home-baked hello from Sara</p>
+                <h1 class="display-4">A little more joy in every slice.</h1>
+                <p class="lead">Welcome to LayersOfJoy — thoughtful, approachable cake recipes for celebrations, slow weekends, and every sweet moment in between.</p>
+                <a class="hero-link" href="#featured-recipes">Find your next bake <span aria-hidden="true">↘</span></a>
+            </div>
+            <figure class="hero-photo">
+                <img src="https://butternutbakeryblog.com/wp-content/uploads/2019/04/carrot-cake-layers.jpg" alt="A tall, layered carrot cake with creamy frosting">
+                <figcaption>Made slowly, shared happily.</figcaption>
+            </figure>
+        </div>
     </div>
 
 
     <div class="content-shell">
         <div class="feature-panel kitchen-note">
+        <figure class="kitchen-note-photo">
+            <img src="https://www.cookingclassy.com/wp-content/uploads/2022/02/molten-lava-cake-17.jpg" alt="Warm chocolate lava cake with a rich center">
+            <figcaption>One for the chocolate lovers</figcaption>
+        </figure>
+        <div class="kitchen-note-copy">
             <h2>Made for home bakers</h2>
             <p>Find dependable recipes, clear steps, and a little inspiration to make something lovely in your own kitchen.</p>
-        <table class="kitchen-note-table">
-            <thead>
-                <tr>
-                    <th scope="col">A little something for</th>
-                    <th scope="col">From Sara's kitchen</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">Celebrations</th>
-                    <td>Cakes worth sharing</td>
-                </tr>
-                <tr>
-                    <th scope="row">Slow weekends</th>
-                    <td>A cozy kitchen project</td>
-                </tr>
-                <tr>
-                    <th scope="row">Everyday moments</th>
-                    <td>A little slice of joy</td>
-                </tr>
-            </tbody>
-        </table>
+            <table class="kitchen-note-table">
+                <thead>
+                    <tr>
+                        <th scope="col">A little something for</th>
+                        <th scope="col">From Sara's kitchen</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Celebrations</th>
+                        <td>Cakes worth sharing</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Slow weekends</th>
+                        <td>A cozy kitchen project</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Everyday moments</th>
+                        <td>A little slice of joy</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 
         <section id="featured-recipes" aria-labelledby="featured-recipes-title">
@@ -1292,7 +1492,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-menu { max-height: m
                             <div class="recipe-card-face recipe-card-back">
                                 <h3>Carrot Cake</h3>
                                 <p>Warm spice, tender layers, and a smooth cream-cheese finish make this a timeless favorite.</p>
-                                <a class="recipe-card-link" href="carrotcakerecipe.html">View recipe</a>
+                                <a class="recipe-card-link" href="carrotcakerecipe.html" aria-label="View Carrot Cake recipe">View recipe</a>
                                 <label class="recipe-card-flip-back" for="flip-carrot" aria-label="Return to Carrot Cake photo" title="Return to cake photo"><span aria-hidden="true">↶</span></label>
                             </div>
                         </div>
@@ -1313,7 +1513,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-menu { max-height: m
                             <div class="recipe-card-face recipe-card-back">
                                 <h3>Red Velvet Cake</h3>
                                 <p>Velvety cocoa layers meet tangy cream-cheese frosting in this striking celebration cake.</p>
-                                <a class="recipe-card-link" href="redvelvetcakerecipe.html">View recipe</a>
+                                <a class="recipe-card-link" href="redvelvetcakerecipe.html" aria-label="View Red Velvet Cake recipe">View recipe</a>
                                 <label class="recipe-card-flip-back" for="flip-red-velvet" aria-label="Return to Red Velvet photo" title="Return to cake photo"><span aria-hidden="true">↶</span></label>
                             </div>
                         </div>
@@ -1334,7 +1534,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-menu { max-height: m
                             <div class="recipe-card-face recipe-card-back">
                                 <h3>Black Forest Cake</h3>
                                 <p>Rich chocolate sponge, sweet cherries, and clouds of cream bring this classic to life.</p>
-                                <a class="recipe-card-link" href="blackforestcakerecipe.html">View recipe</a>
+                                <a class="recipe-card-link" href="blackforestcakerecipe.html" aria-label="View Black Forest Cake recipe">View recipe</a>
                                 <label class="recipe-card-flip-back" for="flip-black-forest" aria-label="Return to Black Forest photo" title="Return to cake photo"><span aria-hidden="true">↶</span></label>
                             </div>
                         </div>
@@ -1355,7 +1555,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-menu { max-height: m
                             <div class="recipe-card-face recipe-card-back">
                                 <h3>Marble Cake</h3>
                                 <p>Soft vanilla and chocolate batters swirl together for a beautiful, nostalgic bake.</p>
-                                <a class="recipe-card-link" href="marblecakerecipe.html">View recipe</a>
+                                <a class="recipe-card-link" href="marblecakerecipe.html" aria-label="View Marble Cake recipe">View recipe</a>
                                 <label class="recipe-card-flip-back" for="flip-marble" aria-label="Return to Marble Cake photo" title="Return to cake photo"><span aria-hidden="true">↶</span></label>
                             </div>
                         </div>
@@ -1376,7 +1576,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-menu { max-height: m
                             <div class="recipe-card-face recipe-card-back">
                                 <h3>Chocolate Lava Cake</h3>
                                 <p>Break through the delicate outside to find the warm, flowing chocolate center inside.</p>
-                                <a class="recipe-card-link" href="chocolatelavacakerecipe.html">View recipe</a>
+                                <a class="recipe-card-link" href="chocolatelavacakerecipe.html" aria-label="View Chocolate Lava Cake recipe">View recipe</a>
                                 <label class="recipe-card-flip-back" for="flip-lava" aria-label="Return to Chocolate Lava Cake photo" title="Return to cake photo"><span aria-hidden="true">↶</span></label>
                             </div>
                         </div>
@@ -1397,7 +1597,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-menu { max-height: m
                             <div class="recipe-card-face recipe-card-back">
                                 <h3>Pistachio Cake</h3>
                                 <p>Delicately nutty, tender cake with a lovely color and an elegant finish.</p>
-                                <a class="recipe-card-link" href="pistachiocakerecipe.html">View recipe</a>
+                                <a class="recipe-card-link" href="pistachiocakerecipe.html" aria-label="View Pistachio Cake recipe">View recipe</a>
                                 <label class="recipe-card-flip-back" for="flip-pistachio" aria-label="Return to Pistachio Cake photo" title="Return to cake photo"><span aria-hidden="true">↶</span></label>
                             </div>
                         </div>
