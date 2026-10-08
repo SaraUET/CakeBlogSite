@@ -369,6 +369,627 @@
             }
         }
     </style>
+    <style id="home-editorial-theme">
+        body {
+            background: #fbf6ef;
+        }
+
+        .jumbotron {
+            padding: 170px 24px 100px;
+            background:
+                radial-gradient(ellipse at 13% 18%, rgba(222, 139, 118, 0.25), transparent 24rem),
+                radial-gradient(ellipse at 84% 12%, rgba(225, 180, 103, 0.3), transparent 29rem),
+                linear-gradient(135deg, #f4ded0, #fff6e9 58%, #f4e4d7);
+            color: var(--ink);
+        }
+
+        .jumbotron h1 {
+            max-width: 850px;
+            margin: 0 auto 1rem;
+            color: #512f20;
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: clamp(2.8rem, 6vw, 5rem);
+            font-weight: 600;
+            letter-spacing: -0.045em;
+            line-height: 1.08;
+            text-shadow: none;
+        }
+
+        .jumbotron .lead {
+            max-width: 620px;
+            color: #705849;
+            font-size: 1.08rem;
+        }
+
+        .content-shell {
+            max-width: 1120px;
+            padding-top: 30px;
+            background:
+                radial-gradient(ellipse at 98% 40%, rgba(219, 154, 127, 0.11), transparent 25rem),
+                radial-gradient(ellipse at 0% 75%, rgba(224, 186, 119, 0.12), transparent 26rem);
+        }
+
+        .feature-panel {
+            margin: 0 auto 54px;
+            padding: 0 0 28px;
+            border: 0;
+            border-bottom: 1px solid rgba(105, 72, 53, 0.18);
+            border-radius: 0;
+            background: transparent;
+            box-shadow: none;
+            text-align: center;
+        }
+
+        .feature-panel h2,
+        .recipe-section-heading h2,
+        .cta-box h3 {
+            color: #512f20;
+            font-family: Georgia, 'Times New Roman', serif;
+            font-weight: 600;
+            letter-spacing: -0.035em;
+        }
+
+        .feature-panel h2 {
+            font-size: clamp(1.9rem, 3vw, 2.6rem);
+        }
+
+        .feature-panel p,
+        .recipe-section-heading p {
+            max-width: 650px;
+            margin-right: auto;
+            margin-left: auto;
+            color: #705849;
+        }
+
+        .recipe-section-heading {
+            margin: 0 0 28px;
+            text-align: left;
+        }
+
+        .recipe-section-heading h2 {
+            font-size: clamp(2rem, 3.5vw, 3rem);
+        }
+
+        .recipe-section-heading p {
+            margin-left: 0;
+        }
+
+        .recipe-grid {
+            --bs-gutter-x: 1.35rem;
+            --bs-gutter-y: 1.35rem;
+        }
+
+        #featured-recipes {
+            position: relative;
+            margin: 12px -18px 54px;
+            padding: clamp(24px, 4vw, 48px);
+            border: 1px solid rgba(117, 69, 46, 0.13);
+            border-radius: 38px 12px 38px 12px;
+            background:
+                radial-gradient(circle at 10px 10px, rgba(151, 100, 63, 0.07) 1px, transparent 1.5px) 0 0 / 18px 18px,
+                linear-gradient(135deg, rgba(255, 252, 245, 0.98), rgba(249, 237, 220, 0.96));
+            box-shadow: 0 22px 55px rgba(91, 56, 35, 0.08);
+        }
+
+        #featured-recipes::before {
+            position: absolute;
+            top: -17px;
+            right: 9%;
+            width: 102px;
+            height: 33px;
+            border: 1px solid rgba(176, 113, 79, 0.22);
+            background: rgba(230, 188, 145, 0.52);
+            content: "";
+            transform: rotate(4deg);
+        }
+
+        .recipe-section-heading {
+            position: relative;
+            padding-left: 20px;
+            border-left: 3px solid #bd684f;
+        }
+
+        .recipe-section-kicker {
+            margin: 0 0 7px;
+            color: #a8563f;
+            font-family: 'Segoe Print', 'Bradley Hand', cursive;
+            font-size: 0.98rem;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            transform: rotate(-2deg);
+            transform-origin: left center;
+        }
+
+        .recipe-card {
+            height: 360px;
+        }
+
+        .recipe-grid > .col:nth-child(2) {
+            transform: translateY(22px);
+        }
+
+        .recipe-grid > .col:nth-child(3) {
+            transform: translateY(-9px);
+        }
+
+        .recipe-grid > .col:nth-child(4) {
+            transform: translateY(16px);
+        }
+
+        .recipe-grid > .col:nth-child(5) {
+            transform: translateY(-7px);
+        }
+
+        .recipe-grid > .col:nth-child(6) {
+            transform: translateY(20px);
+        }
+
+        .recipe-card-front::before {
+            position: absolute;
+            z-index: 1;
+            top: 18px;
+            right: 18px;
+            padding: 7px 12px;
+            border: 1px solid rgba(255, 255, 255, 0.72);
+            border-radius: 4px 13px 4px 13px;
+            background: #f4d18e;
+            color: #603820;
+            content: "A weekend favorite";
+            font-family: 'Segoe Print', 'Bradley Hand', cursive;
+            font-size: 0.76rem;
+            font-weight: 700;
+            box-shadow: 0 5px 15px rgba(45, 23, 12, 0.17);
+            transform: rotate(4deg);
+        }
+
+        .recipe-grid > .col:nth-child(2) .recipe-card-front::before {
+            background: #e9a6a3;
+            content: "For celebrations";
+            transform: rotate(-4deg);
+        }
+
+        .recipe-grid > .col:nth-child(3) .recipe-card-front::before {
+            background: #e8bf83;
+            content: "Chocolate & cherry";
+            transform: rotate(3deg);
+        }
+
+        .recipe-grid > .col:nth-child(4) .recipe-card-front::before {
+            background: #d9c493;
+            content: "A little nostalgia";
+            transform: rotate(-3deg);
+        }
+
+        .recipe-grid > .col:nth-child(5) .recipe-card-front::before {
+            background: #c98b70;
+            color: #fffaf2;
+            content: "Best served warm";
+            transform: rotate(4deg);
+        }
+
+        .recipe-grid > .col:nth-child(6) .recipe-card-front::before {
+            background: #c7d19c;
+            content: "A nutty delight";
+            transform: rotate(-4deg);
+        }
+
+        .recipe-card-inner {
+            border: 5px solid #fffaf1;
+            border-radius: 19px 28px 20px 27px;
+            box-shadow: 0 16px 24px rgba(72, 42, 26, 0.17), 0 3px 0 rgba(148, 95, 64, 0.12);
+        }
+
+        .recipe-card-face {
+            border: 1px solid rgba(111, 67, 45, 0.12);
+            border-radius: 14px 23px 15px 22px;
+        }
+
+        .recipe-card-back {
+            align-items: center;
+            text-align: center;
+        }
+
+        .recipe-card-back::before {
+            top: 12px;
+            right: 17px;
+            color: rgba(168, 86, 63, 0.28);
+            font-size: 3rem;
+        }
+
+        .recipe-card-flip-back {
+            display: inline-flex;
+            width: 38px;
+            height: 38px;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(117, 69, 46, 0.3);
+            border-radius: 50%;
+            background: rgba(255, 251, 244, 0.72);
+            color: #75452e;
+            font-size: 1.45rem;
+            line-height: 1;
+            text-decoration: none;
+        }
+
+        .recipe-card-flip-back:hover {
+            background: #75452e;
+            color: #fffaf3;
+        }
+
+        .feature-panel {
+            position: relative;
+            width: min(760px, 92%);
+            margin: 18px auto 62px;
+            padding: 30px clamp(24px, 5vw, 54px);
+            border: 1px solid rgba(117, 69, 46, 0.2);
+            border-radius: 4px 22px 5px 22px;
+            background:
+                repeating-linear-gradient(0deg, transparent 0 33px, rgba(151, 111, 75, 0.09) 33px 34px),
+                #fffaf0;
+            box-shadow: 5px 8px 0 rgba(181, 126, 83, 0.12), 0 16px 35px rgba(75, 45, 28, 0.08);
+            transform: rotate(-0.7deg);
+        }
+
+        .feature-panel.kitchen-note {
+            width: min(920px, 96%);
+            margin: 2px auto 58px;
+            padding: 32px clamp(22px, 5vw, 54px) 35px clamp(42px, 7vw, 76px);
+            border: 1px solid rgba(117, 69, 46, 0.2);
+            border-radius: 11px 34px 13px 28px;
+            background:
+                linear-gradient(90deg, transparent 0 30px, rgba(190, 105, 91, 0.55) 30px 32px, transparent 32px),
+                repeating-linear-gradient(180deg, #fffdf6 0 35px, rgba(117, 160, 177, 0.22) 35px 36px);
+            box-shadow: 7px 9px 0 rgba(181, 126, 83, 0.12), 0 18px 36px rgba(75, 45, 28, 0.1);
+            text-align: left;
+            transform: rotate(-0.6deg);
+        }
+
+        .feature-panel.kitchen-note::before {
+            top: -12px;
+            left: 50%;
+            width: 118px;
+            height: 30px;
+            border: 1px solid rgba(176, 113, 79, 0.24);
+            background: rgba(225, 185, 145, 0.72);
+            content: "KITCHEN NOTES";
+            color: #80543d;
+            font-family: 'Segoe Print', 'Bradley Hand', cursive;
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            line-height: 28px;
+            text-align: center;
+            transform: translateX(-50%) rotate(2deg);
+        }
+
+        .feature-panel.kitchen-note h2 {
+            margin: 0 0 7px;
+            color: #603b2b;
+            font-family: 'Segoe Print', 'Bradley Hand', cursive;
+            font-size: clamp(1.65rem, 3vw, 2.2rem);
+            transform: rotate(-1deg);
+        }
+
+        .feature-panel.kitchen-note p {
+            margin: 0 0 16px;
+            text-align: left;
+        }
+
+        .kitchen-note-table {
+            width: 100%;
+            margin: 13px 0 0;
+            border-collapse: separate;
+            border-spacing: 0;
+            color: #624839;
+            font-family: 'Segoe Print', 'Bradley Hand', cursive;
+            font-size: 0.94rem;
+        }
+
+        .kitchen-note-table th,
+        .kitchen-note-table td {
+            padding: 8px 12px;
+            border-bottom: 1px dashed rgba(117, 69, 46, 0.24);
+            text-align: left;
+        }
+
+        .kitchen-note-table thead th {
+            color: #a8563f;
+            font-size: 0.88rem;
+            font-weight: 700;
+        }
+
+        .kitchen-note-table tbody th {
+            width: 36%;
+            color: #603b2b;
+            font-weight: 700;
+        }
+
+        .kitchen-note-table tbody tr:last-child th,
+        .kitchen-note-table tbody tr:last-child td {
+            border-bottom: 0;
+        }
+
+        .feature-panel::before {
+            position: absolute;
+            top: -13px;
+            left: 50%;
+            width: 88px;
+            height: 26px;
+            border: 1px solid rgba(176, 113, 79, 0.2);
+            background: rgba(222, 172, 129, 0.54);
+            content: "";
+            transform: translateX(-50%) rotate(2deg);
+        }
+
+        .feature-panel h2 {
+            font-family: 'Segoe Print', 'Bradley Hand', cursive;
+            font-size: clamp(1.6rem, 3vw, 2.25rem);
+        }
+
+        .feature-panel .recipe-card-link {
+            margin-top: 4px;
+        }
+
+        .see-more-button {
+            border: 0;
+            border-bottom: 2px solid #bd684f;
+            border-radius: 0;
+            background: transparent;
+            color: #75452e;
+            font-family: 'Segoe Print', 'Bradley Hand', cursive;
+            font-size: 1.06rem;
+        }
+
+        .see-more-button:hover {
+            background: transparent;
+            color: #a8563f;
+            transform: translateY(-2px) rotate(-1deg);
+        }
+
+        .cta-box {
+            position: relative;
+            overflow: hidden;
+            border-radius: 42px 12px 42px 12px;
+            text-align: left;
+        }
+
+        .cta-box::after {
+            position: absolute;
+            right: 28px;
+            bottom: -34px;
+            color: rgba(117, 69, 46, 0.11);
+            content: "✿";
+            font-size: 9rem;
+            line-height: 1;
+            transform: rotate(-15deg);
+            pointer-events: none;
+        }
+
+        @media (max-width: 768px) {
+            #featured-recipes {
+                margin-right: -8px;
+                margin-left: -8px;
+                border-radius: 28px 10px 28px 10px;
+            }
+
+            .recipe-grid > .col:nth-child(n) {
+                transform: none;
+            }
+
+            .feature-panel.kitchen-note {
+                width: 100%;
+                padding: 31px 16px 25px 38px;
+                text-align: center;
+                transform: rotate(-0.3deg);
+            }
+
+            .feature-panel.kitchen-note p {
+                margin-top: 8px;
+                text-align: center;
+            }
+
+            .kitchen-note-table {
+                font-size: 0.82rem;
+            }
+
+            .kitchen-note-table th,
+            .kitchen-note-table td {
+                padding: 7px 6px;
+            }
+        }
+
+        .recipe-grid > .col[hidden] {
+            display: none;
+        }
+
+        .recipe-card {
+            height: 360px;
+            perspective: 1200px;
+        }
+
+        .recipe-card-inner {
+            height: 100%;
+            border-radius: 24px;
+            box-shadow: 0 18px 38px rgba(82, 49, 32, 0.16);
+        }
+
+        .recipe-card-toggle {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        .recipe-card:hover .recipe-card-inner,
+        .recipe-card-toggle:checked + .recipe-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .recipe-card-toggle:focus-visible + .recipe-card-inner {
+            outline: 3px solid #a8563f;
+            outline-offset: 5px;
+        }
+
+        .recipe-card-face {
+            border: 1px solid rgba(111, 67, 45, 0.16);
+            border-radius: 24px;
+        }
+
+        .recipe-card-front {
+            height: 100%;
+            padding: 24px;
+        }
+
+        .recipe-card-front img {
+            transition: transform 0.5s ease;
+        }
+
+        .recipe-card:hover .recipe-card-front img {
+            transform: scale(1.05);
+        }
+
+        .recipe-card-front h3 {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 1.85rem;
+            font-weight: 600;
+        }
+
+        .recipe-card-hint {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .recipe-card-back {
+            justify-content: center;
+            padding: 30px;
+            background:
+                radial-gradient(ellipse at 100% 0%, rgba(230, 174, 111, 0.34), transparent 55%),
+                linear-gradient(145deg, #fff8ed, #f2dfd0);
+            transform: rotateY(180deg);
+        }
+
+        .recipe-card-back::before {
+            color: rgba(168, 86, 63, 0.28);
+        }
+
+        .recipe-card-back h3 {
+            font-size: 1.65rem;
+        }
+
+        .recipe-card-flip-back {
+            display: inline-block;
+            margin-top: 13px;
+            padding: 0;
+            border: 0;
+            background: transparent;
+            color: #75452e;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            cursor: pointer;
+        }
+
+        .recipe-card-back h3 {
+            color: #512f20;
+            font-family: Georgia, 'Times New Roman', serif;
+            font-weight: 600;
+        }
+
+        .recipe-grid > .col:nth-child(1) .recipe-card-back {
+            background: radial-gradient(ellipse at 100% 0%, rgba(230, 174, 111, 0.36), transparent 55%), linear-gradient(145deg, #fff8ed, #f2dfd0);
+        }
+
+        .recipe-grid > .col:nth-child(2) .recipe-card-back {
+            background: radial-gradient(ellipse at 100% 0%, rgba(213, 129, 145, 0.26), transparent 55%), linear-gradient(145deg, #fff6f3, #f1d9d1);
+        }
+
+        .recipe-grid > .col:nth-child(3) .recipe-card-back {
+            background: radial-gradient(ellipse at 100% 0%, rgba(133, 92, 66, 0.23), transparent 55%), linear-gradient(145deg, #fff8ed, #ead9c6);
+        }
+
+        .recipe-grid > .col:nth-child(4) .recipe-card-back {
+            background: radial-gradient(ellipse at 100% 0%, rgba(207, 159, 91, 0.28), transparent 55%), linear-gradient(145deg, #fff8ed, #eee1cb);
+        }
+
+        .recipe-grid > .col:nth-child(5) .recipe-card-back {
+            background: radial-gradient(ellipse at 100% 0%, rgba(186, 93, 68, 0.25), transparent 55%), linear-gradient(145deg, #fff6f0, #efd8cd);
+        }
+
+        .recipe-grid > .col:nth-child(6) .recipe-card-back {
+            background: radial-gradient(ellipse at 100% 0%, rgba(127, 158, 104, 0.28), transparent 55%), linear-gradient(145deg, #f7f8ec, #e5ebd7);
+        }
+
+        .recipe-card-link,
+        .btn-custom {
+            padding: 10px 17px;
+            border-radius: 999px;
+            background: linear-gradient(135deg, #bd684f, #75452e);
+            box-shadow: 0 8px 18px rgba(117, 69, 46, 0.2);
+        }
+
+        .recipe-card-link:hover,
+        .btn-custom:hover {
+            background: linear-gradient(135deg, #a8563f, #59341f);
+        }
+
+        .cta-box {
+            margin-top: 48px;
+            padding: 32px;
+            border: 1px solid rgba(105, 72, 53, 0.14);
+            border-radius: 18px;
+            background:
+                radial-gradient(ellipse at 10% 0%, rgba(219, 139, 109, 0.2), transparent 28rem),
+                linear-gradient(120deg, #f4e2d2, #faefd9);
+            box-shadow: none;
+        }
+
+        .see-more-wrap {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .see-more-button {
+            padding: 11px 24px;
+            border: 1px solid rgba(117, 69, 46, 0.35);
+            border-radius: 999px;
+            background: #fffaf3;
+            color: #75452e;
+            font-weight: 700;
+            transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+        }
+
+        .see-more-button:hover {
+            transform: translateY(-2px);
+            background: #75452e;
+            color: #fff;
+        }
+
+        .footer {
+            margin-top: 0;
+            background: #35261f;
+        }
+
+        @media (max-width: 768px) {
+            .jumbotron {
+                padding: 140px 20px 70px;
+            }
+
+            .recipe-card {
+                height: 330px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .recipe-card-inner,
+            .recipe-card-front img,
+            .see-more-button {
+                transition: none;
+            }
+        }
+    </style>
     <style id="site-navbar-theme">
         nav.navbar.navbar-expand-lg.navbar-dark.fixed-top {
             top: 12px;
@@ -614,26 +1235,48 @@ nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-menu { max-height: m
 
     <!-- Jumbotron -->
 
-    <div class="jumbotron" >
-        <h1 class="display-4" style="font-size: 50px;">Welcome to
-            LayersOfJoy</h1>
-        <p class="lead">Indulge in the sweet symphony of flavors, where every slice tells a story of pure delight. <br>Layers of Joy is your sanctuary for all things cake — a haven for baking enthusiasts, <br>dessert lovers, and anyone seeking a slice of happiness.</p>
+    <div class="jumbotron">
+        <h1 class="display-4">A little more joy in every slice.</h1>
+        <p class="lead">Welcome to LayersOfJoy — thoughtful, approachable cake recipes for celebrations, slow weekends, and every sweet moment in between.</p>
     </div>
 
 
     <div class="content-shell">
-        <div class="feature-panel">
-            <h2>Freshly baked inspiration</h2>
-            <p>From celebration cakes to everyday comfort bakes, every recipe is designed to feel joyful, delicious, and easy to love.</p>
-        </div>
+        <div class="feature-panel kitchen-note">
+            <h2>Made for home bakers</h2>
+            <p>Find dependable recipes, clear steps, and a little inspiration to make something lovely in your own kitchen.</p>
+        <table class="kitchen-note-table">
+            <thead>
+                <tr>
+                    <th scope="col">A little something for</th>
+                    <th scope="col">From Sara's kitchen</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Celebrations</th>
+                    <td>Cakes worth sharing</td>
+                </tr>
+                <tr>
+                    <th scope="row">Slow weekends</th>
+                    <td>A cozy kitchen project</td>
+                </tr>
+                <tr>
+                    <th scope="row">Everyday moments</th>
+                    <td>A little slice of joy</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
         <section id="featured-recipes" aria-labelledby="featured-recipes-title">
             <div class="recipe-section-heading">
-                <h2 id="featured-recipes-title">Explore irresistible recipes</h2>
-                <p>Embark on a journey of culinary bliss as we share delectable cake recipes that cater to every taste bud. From classic favorites to innovative creations, each recipe is crafted with love and layered with joy.</p>
+                <p class="recipe-section-kicker">From Sara's recipe box</p>
+                <h2 id="featured-recipes-title">Come to the cake table</h2>
+                <p>Six bakes I keep coming back to. Pick a cake, peek at the story, and find the full recipe on the other side.</p>
             </div>
 
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 recipe-grid">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 recipe-grid" id="featured-recipe-grid">
                 <div class="col">
                     <article class="recipe-card">
                         <input class="recipe-card-toggle" type="checkbox" id="flip-carrot" aria-label="Show Carrot Cake recipe details">
@@ -650,7 +1293,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-menu { max-height: m
                                 <h3>Carrot Cake</h3>
                                 <p>Warm spice, tender layers, and a smooth cream-cheese finish make this a timeless favorite.</p>
                                 <a class="recipe-card-link" href="carrotcakerecipe.html">View recipe</a>
-                                <label class="recipe-card-flip-back" for="flip-carrot">Flip back</label>
+                                <label class="recipe-card-flip-back" for="flip-carrot" aria-label="Return to Carrot Cake photo" title="Return to cake photo"><span aria-hidden="true">↶</span></label>
                             </div>
                         </div>
                     </article>
@@ -671,7 +1314,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-menu { max-height: m
                                 <h3>Red Velvet Cake</h3>
                                 <p>Velvety cocoa layers meet tangy cream-cheese frosting in this striking celebration cake.</p>
                                 <a class="recipe-card-link" href="redvelvetcakerecipe.html">View recipe</a>
-                                <label class="recipe-card-flip-back" for="flip-red-velvet">Flip back</label>
+                                <label class="recipe-card-flip-back" for="flip-red-velvet" aria-label="Return to Red Velvet photo" title="Return to cake photo"><span aria-hidden="true">↶</span></label>
                             </div>
                         </div>
                     </article>
@@ -692,12 +1335,12 @@ nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-menu { max-height: m
                                 <h3>Black Forest Cake</h3>
                                 <p>Rich chocolate sponge, sweet cherries, and clouds of cream bring this classic to life.</p>
                                 <a class="recipe-card-link" href="blackforestcakerecipe.html">View recipe</a>
-                                <label class="recipe-card-flip-back" for="flip-black-forest">Flip back</label>
+                                <label class="recipe-card-flip-back" for="flip-black-forest" aria-label="Return to Black Forest photo" title="Return to cake photo"><span aria-hidden="true">↶</span></label>
                             </div>
                         </div>
                     </article>
                 </div>
-                <div class="col">
+                <div class="col" hidden>
                     <article class="recipe-card">
                         <input class="recipe-card-toggle" type="checkbox" id="flip-marble" aria-label="Show Marble Cake recipe details">
                         <div class="recipe-card-inner">
@@ -713,12 +1356,12 @@ nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-menu { max-height: m
                                 <h3>Marble Cake</h3>
                                 <p>Soft vanilla and chocolate batters swirl together for a beautiful, nostalgic bake.</p>
                                 <a class="recipe-card-link" href="marblecakerecipe.html">View recipe</a>
-                                <label class="recipe-card-flip-back" for="flip-marble">Flip back</label>
+                                <label class="recipe-card-flip-back" for="flip-marble" aria-label="Return to Marble Cake photo" title="Return to cake photo"><span aria-hidden="true">↶</span></label>
                             </div>
                         </div>
                     </article>
                 </div>
-                <div class="col">
+                <div class="col" hidden>
                     <article class="recipe-card">
                         <input class="recipe-card-toggle" type="checkbox" id="flip-lava" aria-label="Show Chocolate Lava Cake recipe details">
                         <div class="recipe-card-inner">
@@ -734,12 +1377,12 @@ nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-menu { max-height: m
                                 <h3>Chocolate Lava Cake</h3>
                                 <p>Break through the delicate outside to find the warm, flowing chocolate center inside.</p>
                                 <a class="recipe-card-link" href="chocolatelavacakerecipe.html">View recipe</a>
-                                <label class="recipe-card-flip-back" for="flip-lava">Flip back</label>
+                                <label class="recipe-card-flip-back" for="flip-lava" aria-label="Return to Chocolate Lava Cake photo" title="Return to cake photo"><span aria-hidden="true">↶</span></label>
                             </div>
                         </div>
                     </article>
                 </div>
-                <div class="col">
+                <div class="col" hidden>
                     <article class="recipe-card">
                         <input class="recipe-card-toggle" type="checkbox" id="flip-pistachio" aria-label="Show Pistachio Cake recipe details">
                         <div class="recipe-card-inner">
@@ -755,17 +1398,27 @@ nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-menu { max-height: m
                                 <h3>Pistachio Cake</h3>
                                 <p>Delicately nutty, tender cake with a lovely color and an elegant finish.</p>
                                 <a class="recipe-card-link" href="pistachiocakerecipe.html">View recipe</a>
-                                <label class="recipe-card-flip-back" for="flip-pistachio">Flip back</label>
+                                <label class="recipe-card-flip-back" for="flip-pistachio" aria-label="Return to Pistachio Cake photo" title="Return to cake photo"><span aria-hidden="true">↶</span></label>
                             </div>
                         </div>
                     </article>
                 </div>
             </div>
+            <div class="see-more-wrap">
+                <button class="see-more-button" type="button" aria-controls="featured-recipe-grid" aria-expanded="false">See more recipes</button>
+            </div>
         </section>
 
+        <div class="feature-panel sara-note">
+            <h2>A note from Sara</h2>
+            <p>I’m Sara, the baker behind LayersOfJoy. I share the cakes I love making and the little details that help each bake feel special.</p>
+            <a class="recipe-card-link" href="aboutme.html">Meet Sara</a>
+        </div>
+
         <div class="cta-box">
-            <h3>Ready to bake something memorable?</h3>
-            <a href="#featured-recipes" class="btn-custom">Browse recipes</a>
+            <h3>Looking for a particular cake?</h3>
+            <p>Browse the full collection from the Recipes menu.</p>
+            <a href="#featured-recipes" class="btn-custom">Explore reader favorites</a>
         </div>
     </div>
 
@@ -788,6 +1441,19 @@ nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-menu { max-height: m
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        const seeMoreButton = document.querySelector(".see-more-button");
+        const hiddenRecipes = document.querySelectorAll(".recipe-grid > .col[hidden]");
+
+        seeMoreButton.addEventListener("click", () => {
+            const isExpanded = seeMoreButton.getAttribute("aria-expanded") === "true";
+            hiddenRecipes.forEach((recipe) => {
+                recipe.hidden = isExpanded;
+            });
+            seeMoreButton.setAttribute("aria-expanded", String(!isExpanded));
+            seeMoreButton.textContent = isExpanded ? "See more recipes" : "Show fewer recipes";
+        });
+    </script>
 
 
 </body>
