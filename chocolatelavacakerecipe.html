@@ -327,13 +327,26 @@ nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-menu { max-height: m
             }
         }
     </style>
+        <link rel="stylesheet" href="recipe.css">
+    <style id="recipe-palette">
+        body {
+            --recipe-bg: #f2e8e2;
+            --recipe-light: #c89982;
+            --recipe-mid: #98624d;
+            --recipe-accent: #874936;
+            --recipe-dark: #653728;
+            --recipe-ink: #321f1b;
+            --recipe-glow: rgba(135, 73, 54, 0.17);
+            --recipe-border: #87493640;
+        }
+    </style>
 </head>
 <body>
 
 
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <a href="home.html"><img src="https://static.vecteezy.com/system/resources/previews/013/366/660/original/birthday-cake-silhouette-for-icon-symbol-pictogram-apps-website-art-illustration-logo-or-graphic-design-element-format-png.png" alt="" style="height: 44px;" ></a>
+        <a href="home.html"><img src="https://static.vecteezy.com/system/resources/previews/013/366/660/original/birthday-cake-silhouette-for-icon-symbol-pictogram-apps-website-art-illustration-logo-or-graphic-design-element-format-png.png" alt="Chocolate Lava Cake" style="height: 44px;" ></a>
         <a class="navbar-brand" href="home.html" >LayersOfJoy</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarNav" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -383,73 +396,87 @@ nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-menu { max-height: m
         </div>
     </nav>
 
-<br><br><br>
-
-  <!-- Jumbotron -->
-<div class="jumbotron">
-    <h1> Chocolate Lava Cake</h1>
-</div>
-<!--Recipe-->
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <img src="https://www.cookingclassy.com/wp-content/uploads/2022/02/molten-lava-cake-17.jpg" alt="Chocolate Lava Cake" class="recipe-img">
+<main class="recipe-page">
+    <section class="recipe-hero">
+        <div class="container recipe-hero-grid">
+            <div class="recipe-hero-copy">
+                <p class="recipe-kicker">From the LayersOfJoy kitchen</p>
+                <h1>Chocolate Lava Cake</h1>
+                <p class="recipe-deck">A homemade favorite with delicious layers, a little baking joy, and plenty to share.</p>
+                <div class="recipe-tags" aria-label="Recipe highlights">
+                    <span>Made from scratch</span>
+                    <span>Made for sharing</span>
                 </div>
-                <div class="col-lg-6">
-                    <div class="recipe-card">
+                <div class="recipe-meta" aria-label="Recipe details">
+                    <span><strong>8</strong> ingredients</span>
+                    <span><strong>10</strong> baking steps</span>
+                    <span><strong>LayersOfJoy</strong> kitchen favorite</span>
+                </div>
+            </div>
+            <figure class="recipe-photo-wrap">
+                <img src="https://www.cookingclassy.com/wp-content/uploads/2022/02/molten-lava-cake-17.jpg" alt="Chocolate Lava Cake" class="recipe-img">
+                <figcaption>A little slice of homemade happiness</figcaption>
+            </figure>
+        </div>
+    </section>
 
-                        <h2>Ingredients:</h2>
-                        <ul>
-                            <li>4 ounces semi-sweet chocolate</li>
-                            <li>1/2 cup unsalted butter</li>
-                            <li>1 cup powdered sugar</li>
-                            <li>2 large eggs, at room temperature</li>
-                            <li>2 egg yolks, separated from egg whites</li>
-                            <li>1 teaspoon vanilla extract</li>
-                            <li>6 tablespoons all-purpose flour</li>
-                            <li>Vanilla ice cream (for serving, if desired)</li>
-                        </ul>
+    <section class="recipe-details" aria-label="Chocolate Lava Cake recipe">
+        <div class="container recipe-content-grid">
+            <article class="recipe-card ingredients-card">
+                <p class="section-kicker">Gather your ingredients</p>
+                <h2>Everything you'll need</h2>
+                <p class="recipe-card-intro">Bring it all together for a delicious homemade bake.</p>
+                <ul class="ingredients-list">
+                    <li>4 ounces semi-sweet chocolate</li>
+                    <li>1/2 cup unsalted butter</li>
+                    <li>1 cup powdered sugar</li>
+                    <li>2 large eggs, at room temperature</li>
+                    <li>2 egg yolks, separated from egg whites</li>
+                    <li>1 teaspoon vanilla extract</li>
+                    <li>6 tablespoons all-purpose flour</li>
+                    <li>Vanilla ice cream (for serving, if desired)</li>
+                </ul>
+            </article>
 
-                        <!-- Instructions -->
-                        <h2>Instructions:</h2>
-                        <ol>
-                            <li>Preheat the oven to 425°F (220°C). Grease four ramekins with butter and dust with cocoa powder.</li>
-                            <li>In a microwave-safe bowl, melt the chocolate and butter together in 30-second intervals, stirring until smooth.</li>
-                            <li>In a separate bowl, whisk together the powdered sugar, eggs, egg yolks, and vanilla extract until well combined.</li>
-                            <li>Gradually add the melted chocolate mixture to the egg mixture, stirring until smooth.</li>
-                            <li>Fold in the flour until just combined.</li>
-                            <li>Divide the batter evenly among the prepared ramekins.</li>
-                            <li>Place the ramekins on a baking sheet and bake in the preheated oven for 12-14 minutes, or until the edges are set but the center is still soft.</li>
-                            <li>Remove from the oven and let the cakes cool in the ramekins for 1-2 minutes.</li>
-                            <li>Carefully invert each cake onto a plate and remove the ramekin.</li>
-                            <li>Serve immediately with a scoop of vanilla ice cream on top.</li>
-                        </ol>
+            <article class="recipe-card method-card">
+                <p class="section-kicker">Let's bake</p>
+                <h2>Make the cake</h2>
+                <p class="recipe-card-intro">Take it one step at a time and enjoy the process.</p>
+                <ol class="step-list">
+                    <li>Preheat the oven to 425°F (220°C). Grease four ramekins with butter and dust with cocoa powder.</li>
+                    <li>In a microwave-safe bowl, melt the chocolate and butter together in 30-second intervals, stirring until smooth.</li>
+                    <li>In a separate bowl, whisk together the powdered sugar, eggs, egg yolks, and vanilla extract until well combined.</li>
+                    <li>Gradually add the melted chocolate mixture to the egg mixture, stirring until smooth.</li>
+                    <li>Fold in the flour until just combined.</li>
+                    <li>Divide the batter evenly among the prepared ramekins.</li>
+                    <li>Place the ramekins on a baking sheet and bake in the preheated oven for 12-14 minutes, or until the edges are set but the center is still soft.</li>
+                    <li>Remove from the oven and let the cakes cool in the ramekins for 1-2 minutes.</li>
+                    <li>Carefully invert each cake onto a plate and remove the ramekin.</li>
+                    <li>Serve immediately with a scoop of vanilla ice cream on top.</li>
+                </ol>
+                <button class="btn-print" onclick="window.print()">Print Recipe</button>
+            </article>
+        </div>
+    </section>
 
-                        <button class="btn-print" onclick="window.print()">Print Recipe</button>
+    <section class="comment-section">
+        <div class="container">
+            <div class="comments-card">
+                <p class="section-kicker">Around the table</p>
+                <h2>Have you tried it?</h2>
+                <p class="comments-intro">Share how your cake turned out or leave a little baking tip for the next person.</p>
+                <div class="comment-box">
+                    <textarea id="commentInput" class="form-control" rows="3" placeholder="Write a comment..."></textarea>
+                    <div class="comment-form-footer">
+                        <p class="comment-word-limit">Keep it to 100 words or less.</p>
+                        <button class="comment-submit" type="button" onclick="postComment()">Post comment</button>
                     </div>
                 </div>
-
+                <ul class="comment-list" id="commentList"></ul>
             </div>
         </div>
     </section>
-    <!-- Video -->
-<div class="row"><div class="col-lg">
-</div></div>
-<!--Comment box-->
-<section class="comment-section">
-<div class="container">
-<h2>Comments</h2>
-<div class="comment-box">
-<textarea id="commentInput" class="form-control" rows="3" placeholder="Write a comment..."></textarea>
-<button class="btn btn-primary mt-2" onclick="postComment()" style="background-color: #2c2220;">Post Comment</button>
-</div>
-<ul class="comment-list" id="commentList">
-
-</ul>
-</div>
-</section>
-
+</main>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -477,7 +504,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-menu { max-height: m
         }
     </script>
  <!-- Footer -->
- <div class="footer text-center">
+ <div class="footer recipe-footer text-center">
     <p>&copy; 2024 Cake Blog</p>
 </div>
 

@@ -325,6 +325,19 @@ nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-menu { max-height: m
             }
         }
     </style>
+        <link rel="stylesheet" href="recipe.css">
+    <style id="recipe-palette">
+        body {
+            --recipe-bg: #fff5e9;
+            --recipe-light: #f4b765;
+            --recipe-mid: #f9d499;
+            --recipe-accent: #d88946;
+            --recipe-dark: #8b4828;
+            --recipe-ink: #512c1c;
+            --recipe-glow: rgba(245, 174, 87, 0.19);
+            --recipe-border: #d8894640;
+        }
+    </style>
 </head>
 <body>
     <html lang="en">
@@ -384,74 +397,90 @@ nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-menu { max-height: m
         </div>
     </nav>
 
-<br><br><br>
-
-<!-- Jumbotron -->
-
-<div class="jumbotron">
-    <h1> Carrot Cake</h1>
-</div>
-<!--Recipe-->
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <img src="https://butternutbakeryblog.com/wp-content/uploads/2019/04/carrot-cake-layers.jpg" alt="Carrot Cake" class="recipe-img">
+<main class="recipe-page">
+    <section class="recipe-hero">
+        <div class="container recipe-hero-grid">
+            <div class="recipe-hero-copy">
+                <p class="recipe-kicker">From the LayersOfJoy kitchen</p>
+                <h1>Carrot Cake</h1>
+                <p class="recipe-deck">Soft, warmly spiced layers meet sweet carrot and pineapple in this cozy, crowd-pleasing classic.</p>
+                <div class="recipe-tags" aria-label="Recipe highlights">
+                    <span>Cinnamon-kissed</span>
+                    <span>Made for sharing</span>
                 </div>
-                <div class="col-lg-6">
-                    <div class="recipe-card">
-                        <h2>Ingredients</h2>
-                        <ul>
-                            <li>2 cups all-purpose flour</li>
-                            <li>1 cup granulated sugar</li>
-                            <li>1 cup brown sugar</li>
-                            <li>1 cup vegetable oil</li>
-                            <li>4 large eggs</li>
-                            <li>2 teaspoons baking powder</li>
-                            <li>1 teaspoon baking soda</li>
-                            <li>1/2 teaspoon salt</li>
-                            <li>2 teaspoons ground cinnamon</li>
-                            <li>3 cups grated carrots</li>
-                            <li>1 cup chopped nuts (optional)</li>
-                            <li>1 cup crushed pineapple, drained</li>
-                            <li>1 teaspoon vanilla extract</li>
-                        </ul>
+                <div class="recipe-meta" aria-label="Recipe details">
+                    <span><strong>350°F</strong> oven temperature</span>
+                    <span><strong>30-35 min</strong> baking time</span>
+                    <span><strong>13</strong> ingredients</span>
+                </div>
+            </div>
+            <figure class="recipe-photo-wrap">
+                <img src="https://butternutbakeryblog.com/wp-content/uploads/2019/04/carrot-cake-layers.jpg" alt="A slice of layered carrot cake with cream cheese frosting" class="recipe-img">
+                <figcaption>A little slice of homemade happiness</figcaption>
+            </figure>
+        </div>
+    </section>
 
-                        <h2>Instructions</h2>
-                        <ol>
-                            <li>Preheat the oven to 350°F (175°C).</li>
-                            <li>In a large bowl, mix together flour, sugars, baking powder, baking soda, salt, and cinnamon.</li>
-                            <li>Add oil, eggs, grated carrots, nuts, pineapple, and vanilla. Mix until well combined.</li>
-                            <li>Pour the batter into a greased and floured cake pan.</li>
-                            <li>Bake for 30-35 minutes or until a toothpick inserted into the center comes out clean.</li>
-                            <li>Let it cool completely before frosting.</li>
-                        </ol>
+    <section class="recipe-details" aria-label="Carrot cake recipe">
+        <div class="container recipe-content-grid">
+            <article class="recipe-card ingredients-card">
+                <p class="section-kicker">Gather your ingredients</p>
+                <h2>Everything you'll need</h2>
+                <p class="recipe-card-intro">A handful of pantry staples, plenty of fresh carrots, and a touch of warm spice.</p>
+                <ul class="ingredients-list">
+                    <li>2 cups all-purpose flour</li>
+                    <li>1 cup granulated sugar</li>
+                    <li>1 cup brown sugar</li>
+                    <li>1 cup vegetable oil</li>
+                    <li>4 large eggs</li>
+                    <li>2 teaspoons baking powder</li>
+                    <li>1 teaspoon baking soda</li>
+                    <li>1/2 teaspoon salt</li>
+                    <li>2 teaspoons ground cinnamon</li>
+                    <li>3 cups grated carrots</li>
+                    <li>1 cup chopped nuts (optional)</li>
+                    <li>1 cup crushed pineapple, drained</li>
+                    <li>1 teaspoon vanilla extract</li>
+                </ul>
+            </article>
 
-                    </ul>
+            <article class="recipe-card method-card">
+                <p class="section-kicker">Let's bake</p>
+                <h2>Make the cake</h2>
+                <p class="recipe-card-intro">Take it one cozy step at a time. Your kitchen will smell wonderful.</p>
+                <ol class="step-list">
+                    <li>Preheat the oven to 350°F (175°C).</li>
+                    <li>In a large bowl, mix together flour, sugars, baking powder, baking soda, salt, and cinnamon.</li>
+                    <li>Add oil, eggs, grated carrots, nuts, pineapple, and vanilla. Mix until well combined.</li>
+                    <li>Pour the batter into a greased and floured cake pan.</li>
+                    <li>Bake for 30-35 minutes or until a toothpick inserted into the center comes out clean.</li>
+                    <li>Let it cool completely before frosting.</li>
+                </ol>
+                <button class="btn-print" onclick="window.print()">Print Recipe</button>
+            </article>
+        </div>
+    </section>
 
-
-                        <button class="btn-print" onclick="window.print()">Print Recipe</button>
+    <section class="comment-section">
+        <div class="container">
+            <div class="comments-card">
+                <p class="section-kicker">Around the table</p>
+                <h2>Have you tried it?</h2>
+                <p class="comments-intro">Share how your cake turned out or leave a little baking tip for the next person.</p>
+                <div class="comment-box">
+                    <textarea id="commentInput" class="form-control" rows="3" placeholder="Write a comment..."></textarea>
+                    <div class="comment-form-footer">
+                        <p class="comment-word-limit">Keep it to 100 words or less.</p>
+                        <button class="comment-submit" type="button" onclick="postComment()">Post comment</button>
                     </div>
                 </div>
-
+                <ul class="comment-list" id="commentList">
+                    <!-- Comments appear here -->
+                </ul>
             </div>
         </div>
     </section>
-    <!--  video -->
-<div class="row"><div class="col-lg">
-</div></div>
-<section class="comment-section">
-<div class="container">
-<h2>Comments</h2>
-<div class="comment-box">
-<textarea id="commentInput" class="form-control" rows="3" placeholder="Write a comment..."></textarea>
-<button class="btn btn-primary mt-2" onclick="postComment()" style="background-color: #e44d26;">Post Comment</button>
-</div>
-<ul class="comment-list" id="commentList">
-<!-- Comment box -->
-</ul>
-</div>
-</section>
+</main>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -480,7 +509,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-menu { max-height: m
         }
     </script>
  <!-- Footer -->
- <div class="footer text-center">
+ <div class="footer recipe-footer text-center">
     <p>&copy; 2024 Cake Blog</p>
 </div>
 

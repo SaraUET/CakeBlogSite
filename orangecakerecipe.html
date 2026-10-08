@@ -325,13 +325,26 @@ nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-menu { max-height: m
             }
         }
     </style>
+        <link rel="stylesheet" href="recipe.css">
+    <style id="recipe-palette">
+        body {
+            --recipe-bg: #fff0df;
+            --recipe-light: #f7c38a;
+            --recipe-mid: #ee9a52;
+            --recipe-accent: #cf7332;
+            --recipe-dark: #8b4b26;
+            --recipe-ink: #4a2a1e;
+            --recipe-glow: rgba(207, 115, 50, 0.18);
+            --recipe-border: #cf733240;
+        }
+    </style>
 </head>
 <body>
 
 
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <a href="home.html"><img src="https://static.vecteezy.com/system/resources/previews/013/366/660/original/birthday-cake-silhouette-for-icon-symbol-pictogram-apps-website-art-illustration-logo-or-graphic-design-element-format-png.png" alt="" style="height: 44px;" ></a>
+        <a href="home.html"><img src="https://static.vecteezy.com/system/resources/previews/013/366/660/original/birthday-cake-silhouette-for-icon-symbol-pictogram-apps-website-art-illustration-logo-or-graphic-design-element-format-png.png" alt="Orange Cake" style="height: 44px;" ></a>
         <a class="navbar-brand" href="home.html" >LayersOfJoy</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarNav" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -381,76 +394,89 @@ nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-menu { max-height: m
         </div>
     </nav>
 
-<br><br><br>
-
-  <!-- Jumbotron -->
-<div class="jumbotron">
-    <h1> Orange Cake</h1>
-</div>
-<!--Recipe-->
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <img src="https://cakedbykatie.com/wp-content/uploads/2022/05/gluten-free-orange-creamsicle-cake.jpg" alt="Orange Cake" class="recipe-img">
+<main class="recipe-page">
+    <section class="recipe-hero">
+        <div class="container recipe-hero-grid">
+            <div class="recipe-hero-copy">
+                <p class="recipe-kicker">From the LayersOfJoy kitchen</p>
+                <h1>Orange Cake</h1>
+                <p class="recipe-deck">A homemade favorite with delicious layers, a little baking joy, and plenty to share.</p>
+                <div class="recipe-tags" aria-label="Recipe highlights">
+                    <span>Made from scratch</span>
+                    <span>Made for sharing</span>
                 </div>
-                <div class="col-lg-6">
-                    <div class="recipe-card">
+                <div class="recipe-meta" aria-label="Recipe details">
+                    <span><strong>10</strong> ingredients</span>
+                    <span><strong>7</strong> baking steps</span>
+                    <span><strong>LayersOfJoy</strong> kitchen favorite</span>
+                </div>
+            </div>
+            <figure class="recipe-photo-wrap">
+                <img src="https://cakedbykatie.com/wp-content/uploads/2022/05/gluten-free-orange-creamsicle-cake.jpg" alt="Orange Cake" class="recipe-img">
+                <figcaption>A little slice of homemade happiness</figcaption>
+            </figure>
+        </div>
+    </section>
 
-                        <h2>Ingredients:</h2>
-    <ul>
-        <li>All-purpose flour - 1 1/2 cups</li>
-        <li>Granulated sugar - 1 cup</li>
-        <li>Baking soda - 1/2 teaspoon</li>
-        <li>Salt - 1/2 teaspoon</li>
-        <li>Large eggs (room temperature) - 2</li>
-        <li>Unsalted butter (melted) - 1/2 cup</li>
-        <li>Fresh orange juice - 1/3 cup</li>
-        <li>Orange zest - 1 tablespoon</li>
-        <li>Buttermilk (or simple milk) - 1/2 cup</li>
-        <li>Vanilla extract - 1 teaspoon</li>
-    </ul>
+    <section class="recipe-details" aria-label="Orange Cake recipe">
+        <div class="container recipe-content-grid">
+            <article class="recipe-card ingredients-card">
+                <p class="section-kicker">Gather your ingredients</p>
+                <h2>Everything you'll need</h2>
+                <p class="recipe-card-intro">Bring it all together for a delicious homemade bake.</p>
+                <ul class="ingredients-list">
+                    <li>All-purpose flour - 1 1/2 cups</li>
+                    <li>Granulated sugar - 1 cup</li>
+                    <li>Baking soda - 1/2 teaspoon</li>
+                    <li>Salt - 1/2 teaspoon</li>
+                    <li>Large eggs (room temperature) - 2</li>
+                    <li>Unsalted butter (melted) - 1/2 cup</li>
+                    <li>Fresh orange juice - 1/3 cup</li>
+                    <li>Orange zest - 1 tablespoon</li>
+                    <li>Buttermilk (or simple milk) - 1/2 cup</li>
+                    <li>Vanilla extract - 1 teaspoon</li>
+                </ul>
+            </article>
 
-    <h2>Instructions for Cake:</h2>
-    <ol>
-        <li>Preheat the oven to 350°F (175°C).</li>
-        <li>Mix all the ingredients in a bowl until smooth.</li>
-        <li>Grease a 9-inch pan with oil and pour the batter into it.</li>
-        <li>Bake in the preheated oven for 25-30 minutes or until a toothpick inserted into the center comes out clean.</li>
-        <li>Allow the cake to cool down, then remove it from the pan.</li>
-    </ol>
+            <article class="recipe-card method-card">
+                <p class="section-kicker">Let's bake</p>
+                <h2>Make the cake</h2>
+                <p class="recipe-card-intro">Take it one step at a time and enjoy the process.</p>
+                <ol class="step-list">
+                    <li>Preheat the oven to 350°F (175°C).</li>
+                    <li>Mix all the ingredients in a bowl until smooth.</li>
+                    <li>Grease a 9-inch pan with oil and pour the batter into it.</li>
+                    <li>Bake in the preheated oven for 25-30 minutes or until a toothpick inserted into the center comes out clean.</li>
+                    <li>Allow the cake to cool down, then remove it from the pan.</li>
+                </ol>
+                <h3 class="recipe-subhead">Orange Glaze (Optional)</h3>
+                <ol class="step-list">
+                    <li>In a small bowl, whisk together powdered sugar, orange juice, and orange zest until smooth.</li>
+                    <li>Add the glaze over the cooled cake.</li>
+                </ol>
+                <button class="btn-print" onclick="window.print()">Print Recipe</button>
+            </article>
+        </div>
+    </section>
 
-    <h2>Orange Glaze (Optional):</h2>
-    <ol>
-        <li>In a small bowl, whisk together powdered sugar, orange juice, and orange zest until smooth.</li>
-        <li>Add the glaze over the cooled cake.</li>
-    </ol>
-
-
-                        <button class="btn-print" onclick="window.print()">Print Recipe</button>
+    <section class="comment-section">
+        <div class="container">
+            <div class="comments-card">
+                <p class="section-kicker">Around the table</p>
+                <h2>Have you tried it?</h2>
+                <p class="comments-intro">Share how your cake turned out or leave a little baking tip for the next person.</p>
+                <div class="comment-box">
+                    <textarea id="commentInput" class="form-control" rows="3" placeholder="Write a comment..."></textarea>
+                    <div class="comment-form-footer">
+                        <p class="comment-word-limit">Keep it to 100 words or less.</p>
+                        <button class="comment-submit" type="button" onclick="postComment()">Post comment</button>
                     </div>
                 </div>
-
+                <ul class="comment-list" id="commentList"></ul>
             </div>
         </div>
     </section>
-    <!-- Video -->
-<div class="row"><div class="col-lg">
-</div></div>
-<!--Comment box-->
-<section class="comment-section">
-<div class="container">
-<h2>Comments</h2>
-<div class="comment-box">
-<textarea id="commentInput" class="form-control" rows="3" placeholder="Write a comment..."></textarea>
-<button class="btn btn-primary mt-2" onclick="postComment()" style="background-color: #e44d26;">Post Comment</button>
-</div>
-<ul class="comment-list" id="commentList">
-
-</ul>
-</div>
-</section>
-
+</main>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -478,7 +504,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-menu { max-height: m
         }
     </script>
  <!-- Footer -->
- <div class="footer text-center">
+ <div class="footer recipe-footer text-center">
     <p>&copy; 2024 Cake Blog</p>
 </div>
 

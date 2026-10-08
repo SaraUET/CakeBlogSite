@@ -323,12 +323,25 @@ nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-menu { max-height: m
             }
         }
     </style>
+        <link rel="stylesheet" href="recipe.css">
+    <style id="recipe-palette">
+        body {
+            --recipe-bg: #f9edda;
+            --recipe-light: #efc178;
+            --recipe-mid: #dba34f;
+            --recipe-accent: #b77b2d;
+            --recipe-dark: #794e24;
+            --recipe-ink: #442c1d;
+            --recipe-glow: rgba(183, 123, 45, 0.16);
+            --recipe-border: #b77b2d40;
+        }
+    </style>
 </head>
 <body>
 
        <!--Navigation Bar -->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <a href="home.html"><img src="https://static.vecteezy.com/system/resources/previews/013/366/660/original/birthday-cake-silhouette-for-icon-symbol-pictogram-apps-website-art-illustration-logo-or-graphic-design-element-format-png.png" alt="" style="height: 44px;" ></a>
+        <a href="home.html"><img src="https://static.vecteezy.com/system/resources/previews/013/366/660/original/birthday-cake-silhouette-for-icon-symbol-pictogram-apps-website-art-illustration-logo-or-graphic-design-element-format-png.png" alt="Pineapple Upside-Down Cake" style="height: 44px;" ></a>
         <a class="navbar-brand" href="home.html" >LayersOfJoy</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarNav" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -377,78 +390,90 @@ nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-menu { max-height: m
             </ul>
         </div>
     </nav>
-<br><br><br>
 
-<!-- Jumbotron -->
-
-<div class="jumbotron">
-    <h1> Pineapple Upside-Down Cake</h1>
-</div>
-<!--Recipe-->
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <img src="https://bakingamoment.com/wp-content/uploads/2018/04/IMG_8715-how-to-make-pineapple-upside-down-cake.jpg" alt="Pineapple Upside-Down Cake" class="recipe-img">
+<main class="recipe-page">
+    <section class="recipe-hero">
+        <div class="container recipe-hero-grid">
+            <div class="recipe-hero-copy">
+                <p class="recipe-kicker">From the LayersOfJoy kitchen</p>
+                <h1>Pineapple Upside-Down Cake</h1>
+                <p class="recipe-deck">A homemade favorite with delicious layers, a little baking joy, and plenty to share.</p>
+                <div class="recipe-tags" aria-label="Recipe highlights">
+                    <span>Made from scratch</span>
+                    <span>Made for sharing</span>
                 </div>
-                <div class="col-lg-6">
-                    <div class="recipe-card">
-                        <h2>Ingredients</h2>
+                <div class="recipe-meta" aria-label="Recipe details">
+                    <span><strong>13</strong> ingredients</span>
+                    <span><strong>7</strong> baking steps</span>
+                    <span><strong>LayersOfJoy</strong> kitchen favorite</span>
+                </div>
+            </div>
+            <figure class="recipe-photo-wrap">
+                <img src="https://bakingamoment.com/wp-content/uploads/2018/04/IMG_8715-how-to-make-pineapple-upside-down-cake.jpg" alt="Pineapple Upside-Down Cake" class="recipe-img">
+                <figcaption>A little slice of homemade happiness</figcaption>
+            </figure>
+        </div>
+    </section>
 
-                        <ul>
-                            <li>1/4 cup unsalted butter</li>
-                            <li>1/2 cup brown sugar</li>
-                            <li>7-8 pineapple slices</li>
-                            <li>Maraschino cherries (optional)</li>
-                            <li>1 1/2 cups all-purpose flour</li>
-                            <li>1 cup sugar</li>
-                            <li>1 tsp baking powder</li>
-                            <li>1/2 tsp baking soda</li>
-                            <li>1/4 tsp salt</li>
-                            <li>1/2 cup unsalted butter</li>
-                            <li>2 large eggs</li>
-                            <li>1 tsp vanilla extract</li>
-                            <li>1/2 cup buttermilk</li>
-                        </ul>
+    <section class="recipe-details" aria-label="Pineapple Upside-Down Cake recipe">
+        <div class="container recipe-content-grid">
+            <article class="recipe-card ingredients-card">
+                <p class="section-kicker">Gather your ingredients</p>
+                <h2>Everything you'll need</h2>
+                <p class="recipe-card-intro">Bring it all together for a delicious homemade bake.</p>
+                <ul class="ingredients-list">
+                    <li>1/4 cup unsalted butter</li>
+                    <li>1/2 cup brown sugar</li>
+                    <li>7-8 pineapple slices</li>
+                    <li>Maraschino cherries (optional)</li>
+                    <li>1 1/2 cups all-purpose flour</li>
+                    <li>1 cup sugar</li>
+                    <li>1 tsp baking powder</li>
+                    <li>1/2 tsp baking soda</li>
+                    <li>1/4 tsp salt</li>
+                    <li>1/2 cup unsalted butter</li>
+                    <li>2 large eggs</li>
+                    <li>1 tsp vanilla extract</li>
+                    <li>1/2 cup buttermilk</li>
+                </ul>
+            </article>
 
+            <article class="recipe-card method-card">
+                <p class="section-kicker">Let's bake</p>
+                <h2>Make the cake</h2>
+                <p class="recipe-card-intro">Take it one step at a time and enjoy the process.</p>
+                <ol class="step-list">
+                    <li>Preheat the oven to 350°F (175°C). Grease a 9-inch round cake pan.</li>
+                    <li>In a small pan, melt 1/4 cup of butter over low heat. Stir in the brown sugar until well combined. Pour the mixture into the prepared cake pan and spread it evenly.</li>
+                    <li>Arrange the pineapple slices over the brown sugar mixture in the pan, placing a maraschino cherry in the center of each pineapple slice (optional).</li>
+                    <li>In a mixing bowl, add all the other ingredients and mix until smooth.</li>
+                    <li>Pour the batter over the pineapple slices in the cake pan, spreading it evenly.</li>
+                    <li>Bake in the preheated oven for 35-40 minutes, or until a toothpick inserted into the center comes out clean.</li>
+                    <li>Allow the cake to cool in the pan for 10 minutes, then invert it onto a serving plate.</li>
+                </ol>
+                <button class="btn-print" onclick="window.print()">Print Recipe</button>
+            </article>
+        </div>
+    </section>
 
-                        <h2>Instructions</h2>
-                        <ol>
-                            <li>Preheat the oven to 350°F (175°C). Grease a 9-inch round cake pan.</li>
-                            <li>In a small pan, melt 1/4 cup of butter over low heat. Stir in the brown sugar until well combined. Pour the mixture into the prepared cake pan and spread it evenly.</li>
-                            <li>Arrange the pineapple slices over the brown sugar mixture in the pan, placing a maraschino cherry in the center of each pineapple slice (optional).</li>
-                            <li>In a mixing bowl, add all the other ingredients and mix until smooth.</li>
-                            <li>Pour the batter over the pineapple slices in the cake pan, spreading it evenly.</li>
-                            <li>Bake in the preheated oven for 35-40 minutes, or until a toothpick inserted into the center comes out clean.</li>
-                            <li>Allow the cake to cool in the pan for 10 minutes, then invert it onto a serving plate.</li>
-                        </ol>
-
-
-
-
-                        <button class="btn-print" onclick="window.print()">Print Recipe</button>
+    <section class="comment-section">
+        <div class="container">
+            <div class="comments-card">
+                <p class="section-kicker">Around the table</p>
+                <h2>Have you tried it?</h2>
+                <p class="comments-intro">Share how your cake turned out or leave a little baking tip for the next person.</p>
+                <div class="comment-box">
+                    <textarea id="commentInput" class="form-control" rows="3" placeholder="Write a comment..."></textarea>
+                    <div class="comment-form-footer">
+                        <p class="comment-word-limit">Keep it to 100 words or less.</p>
+                        <button class="comment-submit" type="button" onclick="postComment()">Post comment</button>
                     </div>
                 </div>
-
+                <ul class="comment-list" id="commentList"></ul>
             </div>
         </div>
     </section>
-    <!--  video -->
-<div class="row"><div class="col-lg">
-</div></div>
-<section class="comment-section">
-<div class="container">
-<h2>Comments</h2>
-<div class="comment-box">
-<textarea id="commentInput" class="form-control" rows="3" placeholder="Write a comment..."></textarea>
-<button class="btn btn-primary mt-2" onclick="postComment()" style="background-color: #e44d26;">Post Comment</button>
-</div>
-<ul class="comment-list" id="commentList">
-<!-- Comment box -->
-</ul>
-</div>
-</section>
-
+</main>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -476,7 +501,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-menu { max-height: m
         }
     </script>
  <!-- Footer -->
- <div class="footer text-center">
+ <div class="footer recipe-footer text-center">
     <p>&copy; 2024 Cake Blog</p>
 </div>
 

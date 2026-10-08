@@ -321,12 +321,25 @@ nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-menu { max-height: m
             }
         }
     </style>
+        <link rel="stylesheet" href="recipe.css">
+    <style id="recipe-palette">
+        body {
+            --recipe-bg: #fbf0e4;
+            --recipe-light: #f1d1a6;
+            --recipe-mid: #e5b980;
+            --recipe-accent: #c08a50;
+            --recipe-dark: #865b39;
+            --recipe-ink: #4b3427;
+            --recipe-glow: rgba(192, 138, 80, 0.15);
+            --recipe-border: #c08a5040;
+        }
+    </style>
 </head>
 <body>
 
    <!--     Navigation Bar -->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <a href="home.html"><img src="https://static.vecteezy.com/system/resources/previews/013/366/660/original/birthday-cake-silhouette-for-icon-symbol-pictogram-apps-website-art-illustration-logo-or-graphic-design-element-format-png.png" alt="" style="height: 44px;" ></a>
+        <a href="home.html"><img src="https://static.vecteezy.com/system/resources/previews/013/366/660/original/birthday-cake-silhouette-for-icon-symbol-pictogram-apps-website-art-illustration-logo-or-graphic-design-element-format-png.png" alt="Japanese Cheesecake" style="height: 44px;" ></a>
         <a class="navbar-brand" href="home.html" >LayersOfJoy</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarNav" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -375,77 +388,90 @@ nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-menu { max-height: m
             </ul>
         </div>
     </nav>
-<br><br><br>
 
-<!-- Jumbotron -->
-
-<div class="jumbotron">
-    <h1> Japanese Cheesecake  </h1>
-</div>
-<!--Recipe-->
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <img src="https://static1.squarespace.com/static/5e185ce3e56525704fdae715/t/610bb0c18a81483b32d593b0/1628156097387/ciYk239SRLOYb%2B5Mg8blbg_thumb_2071e-2.jpg?format=1500w" alt="Japanese Cheesecake" class="recipe-img">
+<main class="recipe-page">
+    <section class="recipe-hero">
+        <div class="container recipe-hero-grid">
+            <div class="recipe-hero-copy">
+                <p class="recipe-kicker">From the LayersOfJoy kitchen</p>
+                <h1>Japanese Cheesecake</h1>
+                <p class="recipe-deck">A homemade favorite with delicious layers, a little baking joy, and plenty to share.</p>
+                <div class="recipe-tags" aria-label="Recipe highlights">
+                    <span>Made from scratch</span>
+                    <span>Made for sharing</span>
                 </div>
-                <div class="col-lg-6">
-                    <div class="recipe-card">
-                        <h2>Ingredients</h2>
+                <div class="recipe-meta" aria-label="Recipe details">
+                    <span><strong>10</strong> ingredients</span>
+                    <span><strong>10</strong> baking steps</span>
+                    <span><strong>LayersOfJoy</strong> kitchen favorite</span>
+                </div>
+            </div>
+            <figure class="recipe-photo-wrap">
+                <img src="https://static1.squarespace.com/static/5e185ce3e56525704fdae715/t/610bb0c18a81483b32d593b0/1628156097387/ciYk239SRLOYb%2B5Mg8blbg_thumb_2071e-2.jpg?format=1500w" alt="Japanese Cheesecake" class="recipe-img">
+                <figcaption>A little slice of homemade happiness</figcaption>
+            </figure>
+        </div>
+    </section>
 
-                        <ul>
-                            <li>1/2 cup unsalted butter</li>
-                            <li>8 ounces cream cheese</li>
-                            <li>1/2 cup sugar</li>
-                            <li>6 large eggs, separate the yolk from the whites</li>
-                            <li>1/4 tsp cream of tartar</li>
-                            <li>1/2 cup milk</li>
-                            <li>1/4 cup all-purpose flour</li>
-                            <li>1/4 cup cornstarch</li>
-                            <li>1/4 tsp salt</li>
-                            <li>1 tsp vanilla extract</li>
-                        </ul>
+    <section class="recipe-details" aria-label="Japanese Cheesecake recipe">
+        <div class="container recipe-content-grid">
+            <article class="recipe-card ingredients-card">
+                <p class="section-kicker">Gather your ingredients</p>
+                <h2>Everything you'll need</h2>
+                <p class="recipe-card-intro">Bring it all together for a delicious homemade bake.</p>
+                <ul class="ingredients-list">
+                    <li>1/2 cup unsalted butter</li>
+                    <li>8 ounces cream cheese</li>
+                    <li>1/2 cup sugar</li>
+                    <li>6 large eggs, separate the yolk from the whites</li>
+                    <li>1/4 tsp cream of tartar</li>
+                    <li>1/2 cup milk</li>
+                    <li>1/4 cup all-purpose flour</li>
+                    <li>1/4 cup cornstarch</li>
+                    <li>1/4 tsp salt</li>
+                    <li>1 tsp vanilla extract</li>
+                </ul>
+            </article>
 
+            <article class="recipe-card method-card">
+                <p class="section-kicker">Let's bake</p>
+                <h2>Make the cake</h2>
+                <p class="recipe-card-intro">Take it one step at a time and enjoy the process.</p>
+                <ol class="step-list">
+                    <li>Preheat the oven to 325°F (160°C). Grease and line the bottom of a 9-inch round cake pan with parchment paper.</li>
+                    <li>In a pan, melt the butter over low heat. Add cream cheese and sugar, and stir until smooth. Remove from heat and let it cool slightly.</li>
+                    <li>In a bowl, beat egg yolks and the cooled butter and cream cheese mixture, vanilla extract, milk, flour, cornstarch, and salt until smooth.</li>
+                    <li>In another bowl, beat egg whites and cream of tartar until stiff peaks form.</li>
+                    <li>Fold the egg whites into the batter gently until well combined.</li>
+                    <li>Pour the batter into the prepared cake pan.</li>
+                    <li>Place the cake pan in a larger dish and add hot water to the dish to create a water bath.</li>
+                    <li>Bake in the preheated oven for 60-70 minutes, or until the top is golden brown and the cake is set.</li>
+                    <li>Remove the cake from the oven and let it cool completely in the pan.</li>
+                    <li>Once cooled, remove the cake from the pan and serve.</li>
+                </ol>
+                <button class="btn-print" onclick="window.print()">Print Recipe</button>
+            </article>
+        </div>
+    </section>
 
-                        <h2>Instructions</h2>
-                        <ol>
-                            <li>Preheat the oven to 325°F (160°C). Grease and line the bottom of a 9-inch round cake pan with parchment paper.</li>
-                            <li>In a pan, melt the butter over low heat. Add cream cheese and sugar, and stir until smooth. Remove from heat and let it cool slightly.</li>
-                            <li>In a bowl, beat egg yolks and the cooled butter and cream cheese mixture, vanilla extract, milk, flour, cornstarch, and salt until smooth.</li>
-                            <li>In another bowl, beat egg whites and cream of tartar until stiff peaks form.</li>
-                            <li>Fold the egg whites into the batter gently until well combined.</li>
-                            <li>Pour the batter into the prepared cake pan.</li>
-                            <li>Place the cake pan in a larger dish and add hot water to the dish to create a water bath.</li>
-                            <li>Bake in the preheated oven for 60-70 minutes, or until the top is golden brown and the cake is set.</li>
-                            <li>Remove the cake from the oven and let it cool completely in the pan.</li>
-                            <li>Once cooled, remove the cake from the pan and serve.</li>
-                        </ol>
-
-
-
-                        <button class="btn-print" onclick="window.print()">Print Recipe</button>
+    <section class="comment-section">
+        <div class="container">
+            <div class="comments-card">
+                <p class="section-kicker">Around the table</p>
+                <h2>Have you tried it?</h2>
+                <p class="comments-intro">Share how your cake turned out or leave a little baking tip for the next person.</p>
+                <div class="comment-box">
+                    <textarea id="commentInput" class="form-control" rows="3" placeholder="Write a comment..."></textarea>
+                    <div class="comment-form-footer">
+                        <p class="comment-word-limit">Keep it to 100 words or less.</p>
+                        <button class="comment-submit" type="button" onclick="postComment()">Post comment</button>
                     </div>
                 </div>
-
+                <ul class="comment-list" id="commentList"></ul>
             </div>
         </div>
     </section>
-    <!--  video -->
-<div class="row"><div class="col-lg">
-</div></div>
-<section class="comment-section">
-<div class="container">
-<h2>Comments</h2>
-<div class="comment-box">
-<textarea id="commentInput" class="form-control" rows="3" placeholder="Write a comment..."></textarea>
-<button class="btn btn-primary mt-2" onclick="postComment()" style="background-color: black;">Post Comment</button>
-</div>
-<ul class="comment-list" id="commentList">
-<!-- Comment box -->
-</ul>
-</div>
-</section>
-
+</main>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -473,7 +499,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-menu { max-height: m
         }
     </script>
  <!-- Footer -->
- <div class="footer text-center">
+ <div class="footer recipe-footer text-center">
     <p>&copy; 2024 Cake Blog</p>
 </div>
 
