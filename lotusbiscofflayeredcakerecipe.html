@@ -232,18 +232,50 @@ background-repeat: no-repeat;
         }
 
         nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-item {
-            border-radius: 10px;
-            padding: 0.62rem 0.85rem;
+            border-radius: 12px;
+            padding: 0.72rem 0.85rem 0.72rem 0.9rem;
+            margin: 0.18rem 0;
             color: #543b30;
             font-family: 'Segoe UI', Arial, sans-serif;
             font-size: 0.9rem;
-            transition: background-color 0.18s ease, color 0.18s ease;
+            font-weight: 650;
+            line-height: 1.4;
+            border-left: 4px solid transparent;
+            transition: transform 0.18s ease, box-shadow 0.18s ease, color 0.18s ease, background-color 0.18s ease, border-color 0.18s ease;
         }
 
         nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-item:hover,
         nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-item:focus {
-            background: #f8e9df;
-            color: #843f27;
+            transform: translateX(4px) translateY(-1px) scale(1.01);
+            box-shadow: 0 10px 20px rgba(45, 28, 18, 0.12);
+            filter: saturate(1.08);
+        }
+
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-item.recipe-carrot { background: linear-gradient(90deg, rgba(239, 183, 117, 0.22), rgba(255,255,255,0.6)); border-left-color: #c77b32; color: #5d3b1d; }
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-item.recipe-marble { background: linear-gradient(90deg, rgba(184, 145, 104, 0.2), rgba(255,255,255,0.6)); border-left-color: #a86d45; color: #4d3127; }
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-item.recipe-redvelvet { background: linear-gradient(90deg, rgba(169, 58, 74, 0.18), rgba(255,255,255,0.6)); border-left-color: #9c2e41; color: #5a1824; }
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-item.recipe-blackforest { background: linear-gradient(90deg, rgba(73, 52, 44, 0.18), rgba(255,255,255,0.6)); border-left-color: #52413d; color: #2d1d1b; }
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-item.recipe-orange { background: linear-gradient(90deg, rgba(245, 157, 73, 0.2), rgba(255,255,255,0.6)); border-left-color: #f08e2f; color: #6c3d1f; }
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-item.recipe-pineapple { background: linear-gradient(90deg, rgba(255, 210, 84, 0.2), rgba(255,255,255,0.6)); border-left-color: #d9a600; color: #5d4b13; }
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-item.recipe-coffee { background: linear-gradient(90deg, rgba(125, 86, 59, 0.18), rgba(255,255,255,0.6)); border-left-color: #7a513b; color: #402a22; }
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-item.recipe-coconut { background: linear-gradient(90deg, rgba(210, 194, 166, 0.25), rgba(255,255,255,0.6)); border-left-color: #b49664; color: #503f2a; }
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-item.recipe-strawberry { background: linear-gradient(90deg, rgba(245, 116, 146, 0.2), rgba(255,255,255,0.6)); border-left-color: #d94b77; color: #5e1d32; }
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-item.recipe-lava { background: linear-gradient(90deg, rgba(175, 74, 65, 0.18), rgba(255,255,255,0.6)); border-left-color: #b64a41; color: #4e1d1d; }
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-item.recipe-oreo { background: linear-gradient(90deg, rgba(111, 93, 82, 0.18), rgba(255,255,255,0.6)); border-left-color: #5d4d46; color: #2d2423; }
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-item.recipe-cheesecake { background: linear-gradient(90deg, rgba(242, 209, 141, 0.26), rgba(255,255,255,0.6)); border-left-color: #d7b062; color: #5a461a; }
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-item.recipe-matcha { background: linear-gradient(90deg, rgba(108, 157, 94, 0.2), rgba(255,255,255,0.6)); border-left-color: #4f8a56; color: #23402d; }
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-item.recipe-tiramisu { background: linear-gradient(90deg, rgba(177, 130, 82, 0.2), rgba(255,255,255,0.6)); border-left-color: #9d7038; color: #4b2e1e; }
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-item.recipe-lotus { background: linear-gradient(90deg, rgba(165, 125, 74, 0.2), rgba(255,255,255,0.6)); border-left-color: #b3833d; color: #4a3424; }
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-item.recipe-lemon { background: linear-gradient(90deg, rgba(247, 214, 72, 0.2), rgba(255,255,255,0.6)); border-left-color: #d7b332; color: #58460b; }
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-item.recipe-pistachio { background: linear-gradient(90deg, rgba(146, 178, 103, 0.22), rgba(255,255,255,0.6)); border-left-color: #6f9e4a; color: #2d4429; }
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-item.recipe-upside { background: linear-gradient(90deg, rgba(232, 169, 72, 0.2), rgba(255,255,255,0.6)); border-left-color: #cc8d28; color: #5a3d14; }
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-item.recipe-nutella { background: linear-gradient(90deg, rgba(169, 110, 53, 0.2), rgba(255,255,255,0.6)); border-left-color: #9d6433; color: #4d2d1b; }
+        nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-item.recipe-japanese { background: linear-gradient(90deg, rgba(245, 188, 123, 0.22), rgba(255,255,255,0.6)); border-left-color: #d49a57; color: #563d2b; }
+        @media (min-width: 992px) {
+            nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .navbar-nav > .nav-item.dropdown:hover > .dropdown-menu,
+            nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .navbar-nav > .nav-item.dropdown:focus-within > .dropdown-menu {
+                display: block;
+            }
         }
 
         nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .navbar-toggler {
@@ -319,26 +351,26 @@ nav.navbar.navbar-expand-lg.navbar-dark.fixed-top .dropdown-menu { max-height: m
                         Recipes
                     </a>
                     <div class="dropdown-menu" aria-labelledby="recipesDropdown" style="max-height: 70vh; overflow-y: auto; overscroll-behavior: contain;">
-                        <a class="dropdown-item" href="carrotcakerecipe.html">Carrot Cake Recipes</a>
-                        <a class="dropdown-item" href="marblecakerecipe.html">Marble Cake Recipes</a>
-                        <a class="dropdown-item" href="redvelvetcakerecipe.html">Red Velvet Cake Recipes</a>
-                        <a class="dropdown-item" href="blackforestcakerecipe.html">Black Forest Cake Recipes</a>
-                        <a class="dropdown-item" href="orangecakerecipe.html">Orange Cake Recipes</a>
-                        <a class="dropdown-item" href="pineapplecakerecipe.html">Pineapple Cake Recipes</a>
-                        <a class="dropdown-item" href="coffeecakerecipe.html">Coffee Cake Recipes</a>
-                        <a class="dropdown-item" href="coconutcakerecipe.html">Coconut Cake Recipes</a>
-                        <a class="dropdown-item" href="strawberrycakerecipe.html">Strawberry Cake Recipes</a>
-                        <a class="dropdown-item" href="chocolatelavacakerecipe.html">Chocolate Lava Cake Recipes</a>
-                        <a class="dropdown-item" href="oreocakerecipe.html">Oreo Cake Recipes</a>
-                        <a class="dropdown-item" href="chocolatecheesecakerecipe.html">Chocolate Cheesecake Recipes</a>
-                        <a class="dropdown-item" href="matchacakerecipe.html">Matcha Cake Recipes</a>
-                        <a class="dropdown-item" href="tiramisucakerecipe.html">Tiramisu Cake Recipes</a>
-                        <a class="dropdown-item" href="lotusbiscofflayeredcakerecipe.html">Lotus Biscoff Layered Cake Recipes</a>
-                        <a class="dropdown-item" href="lemoncheesecakerecipe.html">Lemon Cheesecake Recipes</a>
-                        <a class="dropdown-item" href="pistachiocakerecipe.html">Pistachio Cake Recipes</a>
-                        <a class="dropdown-item" href="pineappleupsidedowncakerecipe.html">Pineapple Upside-Down Cake Recipes</a>
-                        <a class="dropdown-item" href="nutellacakerecipe.html">Nutella Cake Recipes</a>
-                        <a class="dropdown-item" href="japanesecheesecakerecipe.html">Japanese Cheesecake Recipes</a>
+                        <a class="dropdown-item recipe-carrot" href="carrotcakerecipe.html">Carrot Cake Recipes</a>
+                        <a class="dropdown-item recipe-marble" href="marblecakerecipe.html">Marble Cake Recipes</a>
+                        <a class="dropdown-item recipe-redvelvet" href="redvelvetcakerecipe.html">Red Velvet Cake Recipes</a>
+                        <a class="dropdown-item recipe-blackforest" href="blackforestcakerecipe.html">Black Forest Cake Recipes</a>
+                        <a class="dropdown-item recipe-orange" href="orangecakerecipe.html">Orange Cake Recipes</a>
+                        <a class="dropdown-item recipe-pineapple" href="pineapplecakerecipe.html">Pineapple Cake Recipes</a>
+                        <a class="dropdown-item recipe-coffee" href="coffeecakerecipe.html">Coffee Cake Recipes</a>
+                        <a class="dropdown-item recipe-coconut" href="coconutcakerecipe.html">Coconut Cake Recipes</a>
+                        <a class="dropdown-item recipe-strawberry" href="strawberrycakerecipe.html">Strawberry Cake Recipes</a>
+                        <a class="dropdown-item recipe-lava" href="chocolatelavacakerecipe.html">Chocolate Lava Cake Recipes</a>
+                        <a class="dropdown-item recipe-oreo" href="oreocakerecipe.html">Oreo Cake Recipes</a>
+                        <a class="dropdown-item recipe-cheesecake" href="chocolatecheesecakerecipe.html">Chocolate Cheesecake Recipes</a>
+                        <a class="dropdown-item recipe-matcha" href="matchacakerecipe.html">Matcha Cake Recipes</a>
+                        <a class="dropdown-item recipe-tiramisu" href="tiramisucakerecipe.html">Tiramisu Cake Recipes</a>
+                        <a class="dropdown-item recipe-lotus" href="lotusbiscofflayeredcakerecipe.html">Lotus Biscoff Layered Cake Recipes</a>
+                        <a class="dropdown-item recipe-lemon" href="lemoncheesecakerecipe.html">Lemon Cheesecake Recipes</a>
+                        <a class="dropdown-item recipe-pistachio" href="pistachiocakerecipe.html">Pistachio Cake Recipes</a>
+                        <a class="dropdown-item recipe-upside" href="pineappleupsidedowncakerecipe.html">Pineapple Upside-Down Cake Recipes</a>
+                        <a class="dropdown-item recipe-nutella" href="nutellacakerecipe.html">Nutella Cake Recipes</a>
+                        <a class="dropdown-item recipe-japanese" href="japanesecheesecakerecipe.html">Japanese Cheesecake Recipes</a>
                     </div>
                 </li>
                 <li class="nav-item">
